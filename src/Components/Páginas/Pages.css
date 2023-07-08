@@ -1,0 +1,15 @@
+.pages {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}

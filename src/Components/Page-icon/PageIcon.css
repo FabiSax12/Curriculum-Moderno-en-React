@@ -1,0 +1,56 @@
+/* Generales */
+.navegacion_btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.navegacion_btn_icon {
+    color: var(--third);
+    transform: scale(1.6);
+}
+.navegacion_btn:hover .navegacion_btn_icon {
+    color: #07b4ff;
+}
+.navegacion_btn::after {
+    opacity: 0;
+    content: "";
+    width: max-content;
+    height: 15px;
+    padding: 5px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    transition: transform .3s, opacity .2s;
+}
+
+/* ::after */
+.navegacion_btn.home::after {
+    content: "Inicio";
+    left: 3px;
+}
+.navegacion_btn.user::after {
+    content: "Sobre Mi";
+    left: -8px;
+}
+.navegacion_btn.cap::after {
+    content: "Formación";
+    left: -14px;
+}
+.navegacion_btn.brief-case::after {
+    content: "Experiencia";
+    left: -17px;
+}
+
+/* Hover */
+.navegacion_btn:hover::after {
+    opacity: 1;
+    transform: translateY(-43px);
+}

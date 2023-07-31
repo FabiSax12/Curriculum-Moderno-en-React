@@ -1,28 +1,11 @@
-import { useState } from 'react';
 import './App.css'
 import Sidebar from "./Components/Sidebar/Sidebar"
 import Paginas from "./Components/Páginas/Páginas"
 import Navegacion from "./Components/Nav/Navegacion"
+import { handleState } from './logic/pageState';
 
 function App() {
-  const [pageState, setPageState] = useState({
-    home: "active",
-    user: "inactive",
-    curriculum: "inactive",
-    xp: "inactive"
-  });
-
-  const toggleState = (pageId) => {
-    setPageState((prevPageState) => {
-      const newPageState = {};
-
-      Object.keys(prevPageState).forEach((key) => {
-        newPageState[key] = key === pageId ? "active" : "inactive";
-      });
-
-      return newPageState;
-    });
-  };
+  const {pageState, toggleState} = handleState()
   
   return (
     <>

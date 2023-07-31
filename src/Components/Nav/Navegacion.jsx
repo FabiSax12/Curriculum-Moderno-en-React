@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Navegacion.css"
 import PageIcon from '../Page-icon/PageIcon'
 import { faHome, faUser, faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons'

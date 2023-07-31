@@ -11,6 +11,10 @@
     animation: home-intro 1.4s ease forwards;
 }
 
+.page_home h4 {
+    color: #736d6dd0;
+}
+
 /* ----- ----- KEYFRAMES ----- ----- */
 @keyframes home-intro{
     0% {

@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Pages.css"
 import Home from '../Inicio/Home'
 import SobreMi from '../Sobre Mi/SobreMi'

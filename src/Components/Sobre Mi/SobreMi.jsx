@@ -1,26 +1,13 @@
-import { useState, useEffect } from "react";
 import "./SobreMi.css"
+import { useFirstActivation } from "../../hooks/useFirstActivation";
 
 const SobreMi = ({ state }) => {
-  const [isFirstActivation, setIsFirstActivation] = useState(true);
-
-  useEffect(() => {
-    if (state === "inactive") {
-      setIsFirstActivation(true);
-    }
-  }, [state]);
-
-  if (state == "active" && isFirstActivation) {
-    const sobreMiContent = document.querySelector(".sobremi-content");
-    sobreMiContent.classList.remove("show");
-    setTimeout(() => sobreMiContent.classList.add("show"), 400);
-    setIsFirstActivation(false);
-  }
+  useFirstActivation("sobreMi", state)
 
   return (
-    <div className={`sobremi ${state}`}>
+    <div className={`sobremi ${state}`} id="sobreMi">
       <h2 className="title">Sobre Mi</h2>
-      <div className="sobremi-content">
+      <div className="content">
         <section className="sobremi__info-personal">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque ipsum animi inventore. Quae, obcaecati amet commodi nostrum iusto error? Ad facilis quo debitis vero voluptatum odit itaque eaque porro?</p>
           <div>

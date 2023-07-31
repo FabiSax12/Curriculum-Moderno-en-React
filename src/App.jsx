@@ -2,10 +2,10 @@ import './App.css'
 import Sidebar from "./Components/Sidebar/Sidebar"
 import Paginas from "./Components/Páginas/Páginas"
 import Navegacion from "./Components/Nav/Navegacion"
-import { handleState } from './logic/pageState';
+import { usePageStates } from './hooks/usePageStates';
 
 function App() {
-  const {pageState, toggleState} = handleState()
+  const {pageState, toggleState} = usePageStates()
   
   return (
     <>

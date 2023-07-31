@@ -1,27 +1,14 @@
-import {React, useState, useEffect} from "react"
 import "./Experiencia.css"
 import Trabajos from "../Trabajos/Trabajos";
+import { useFirstActivation } from "../../hooks/useFirstActivation";
 
 const Experiencia = ({ state }) => {
-  const [isFirstActivation, setIsFirstActivation] = useState(true);
-
-  useEffect(() => {
-    if (state === "inactive") {
-      setIsFirstActivation(true);
-    }
-  }, [state]);
-
-  if (state == "active" && isFirstActivation) {
-    const xpContent = document.querySelector(".page_xp-content");
-    xpContent.classList.remove("show");
-    setTimeout(() => xpContent.classList.add("show"), 400);
-    setIsFirstActivation(false);
-  }
+  useFirstActivation("xp", state)
 
   return (
-    <div className={`page_xp ${state}`}>
+    <div className={`page_xp ${state}`} id="xp">
       <h2 className="title">Experiencia Laboral</h2>
-      <div className="page_xp-content">
+      <div className="content">
         <Trabajos 
           lugar="Almacen AMP"
           inicio="03 - 11 - 2022"

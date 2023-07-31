@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const handleState = () => {
+export const usePageStates = () => {
   const [pageState, setPageState] = useState({
     home: "active",
     user: "inactive",

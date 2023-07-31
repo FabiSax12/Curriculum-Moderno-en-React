@@ -33,13 +33,27 @@
   list-style: disc;
 }
 
+.sobremi-content {
+  width: 100%;
+  height: 0;
+  overflow-y: scroll;
+  border-bottom: 1px solid var(--primary);
+  transition: height 2s cubic-bezier(0.23, 0.76, 0.58, 1), border-bottom 2.2s ease-out;
+}
+
+/* Transiciones */
+.show {
+  height: 500px;
+  border-bottom-color: #fff;
+}
+
 /* ----- ----- KEYFRAMES ----- ----- */
 @keyframes sobremi-intro{
   0% {
-      opacity: 0;
-      margin-top: 400px;
+    opacity: 0;
+    margin-top: 400px;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }

@@ -1,31 +1,48 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 import "./SobreMi.css"
 
 const SobreMi = ({ state }) => {
+  const [isFirstActivation, setIsFirstActivation] = useState(true);
+
+  useEffect(() => {
+    if (state === "inactive") {
+      setIsFirstActivation(true);
+    }
+  }, [state]);
+
+  if (state == "active" && isFirstActivation) {
+    const sobreMiContent = document.querySelector(".sobremi-content");
+    sobreMiContent.classList.remove("show");
+    setTimeout(() => sobreMiContent.classList.add("show"), 400);
+    setIsFirstActivation(false);
+  }
+
   return (
     <div className={`sobremi ${state}`}>
       <h2 className="title">Sobre Mi</h2>
-      <section className="sobremi__info-personal">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque ipsum animi inventore. Quae, obcaecati amet commodi nostrum iusto error? Ad facilis quo debitis vero voluptatum odit itaque eaque porro?</p>
-        <div>
-          <p><strong>Edad</strong> 18 años </p>
-          <p><strong>País</strong> Costa Rica</p>
-          <p><strong>Dirección</strong> La Caporal, Aguas Zarcas, San Carlos</p>
-          <p><strong>Correo</strong> fabidev18@gmail.com</p>
-          <p><strong>Teléfono</strong>+506 8516-0370</p>
-        </div>
-      </section>
-      <section className="sobremi__aptitudes">
-        <h2 className="sobremi__aptitudes_title">Aptitudes</h2>
-        <ul className="sobremi__aptitudes_lista">
-          <li>Deseo de aprender cosas nuevas</li>
-          <li>Inteligente</li>
-          <li>Responsable y puntual.</li>
-          <li>Adaptación.</li>
-          <li>Atento y buen oyente.</li>
-          <li>Trabajo en equipo.</li>
-        </ul>
-      </section>
+      <div className="sobremi-content">
+        <section className="sobremi__info-personal">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque ipsum animi inventore. Quae, obcaecati amet commodi nostrum iusto error? Ad facilis quo debitis vero voluptatum odit itaque eaque porro?</p>
+          <div>
+            <p><strong>Edad</strong> 18 años </p>
+            <p><strong>País</strong> Costa Rica</p>
+            <p><strong>Dirección</strong> La Caporal, Aguas Zarcas, San Carlos</p>
+            <p><strong>Correo</strong> fabidev18@gmail.com</p>
+            <p><strong>Teléfono</strong>+506 8516-0370</p>
+          </div>
+        </section>
+        <section className="sobremi__aptitudes">
+          <h2 className="sobremi__aptitudes_title">Aptitudes</h2>
+          <ul className="sobremi__aptitudes_lista">
+            <li>Deseo de aprender cosas nuevas</li>
+            <li>Inteligente</li>
+            <li>Responsable y puntual.</li>
+            <li>Adaptación.</li>
+            <li>Atento y buen oyente.</li>
+            <li>Trabajo en equipo.</li>
+          </ul>
+        </section>
+      </div>
     </div>
   )
 }

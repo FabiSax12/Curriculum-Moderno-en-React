@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Sidebar.css"
 import Redes from '../Redes/Redes'
 import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"

@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Redes.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

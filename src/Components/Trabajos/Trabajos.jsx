@@ -1,8 +1,6 @@
-import React from "react";
 import "./Trabajos.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
-import { faGripLinesVertical } from "@fortawesome/free-solid-svg-icons";
 
 const Trabajos = ({lugar, inicio, final, puesto, descripcion}) => {
   return (
@@ -16,7 +14,6 @@ const Trabajos = ({lugar, inicio, final, puesto, descripcion}) => {
       <div className="content_icon">
         <FontAwesomeIcon icon={faCircle} className="icon"/>
         <div className="adorno"></div>
-        {/* <FontAwesomeIcon icon={faGripLinesVertical} className="adorno" /> */}
       </div>
       <div className="content_info">
         <h4>{puesto}</h4>

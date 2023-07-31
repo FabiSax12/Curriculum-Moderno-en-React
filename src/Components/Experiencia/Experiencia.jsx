@@ -61,7 +61,6 @@ const Experiencia = ({ state }) => {
             sit totam dolorum? In laboriosam deserunt corrupti saepe optio."
         />
       </div>
-      
     </div>
   )
 }

@@ -25,11 +25,7 @@ const Sidebar = () => {
             icon={faGithub}
           />
         </div>
-        <a href="CV Fabián Vargas.pdf" target="_blank" download>
-          <button className="sidebar_cv" type="button">
-            Descargar CV
-          </button>
-        </a>
+        <a className="sidebar_cv" href="https://drive.google.com/file/d/1a5xcLBPVEG066bi3edVpJRy1U7VvyNPW/view?usp=drive_link" target="_blank">Descargar CV</a>
         <p className="sidebar__copyrigth">2023 Fabián Vargas Araya</p>
       </div>
     </div>

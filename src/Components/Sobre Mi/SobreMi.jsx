@@ -9,17 +9,19 @@ const SobreMi = ({ state }) => {
       <h2 className="title">Sobre Mi</h2>
       <div className="content">
         <section className="sobremi__info-personal">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque ipsum animi inventore. Quae, obcaecati amet commodi nostrum iusto error? Ad facilis quo debitis vero voluptatum odit itaque eaque porro?</p>
+          <p>
+            Joven apasionado por la ingeniería y la resolución de problemas, adicto al aprendizaje y fanático de los verdaderos retos.<br />
+            Desarrollador Front-End en progreso...
+          </p>
           <div>
             <p><strong>Edad</strong> 18 años </p>
             <p><strong>País</strong> Costa Rica</p>
-            <p><strong>Dirección</strong> La Caporal, Aguas Zarcas, San Carlos</p>
             <p><strong>Correo</strong> fabidev18@gmail.com</p>
-            <p><strong>Teléfono</strong>+506 8516-0370</p>
+            <p><strong>Teléfono</strong> +506 8516-0370</p>
           </div>
         </section>
         <section className="sobremi__aptitudes">
-          <h2 className="sobremi__aptitudes_title">Aptitudes</h2>
+          <h2 className="sobremi__aptitudes_title">{"< Aptitudes />"}</h2>
           <ul className="sobremi__aptitudes_lista">
             <li>Deseo de aprender cosas nuevas</li>
             <li>Inteligente</li>

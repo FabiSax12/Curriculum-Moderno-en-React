@@ -1,7 +1,7 @@
 import "./Pages.css"
 import Home from '../Inicio/Home'
 import SobreMi from '../Sobre Mi/SobreMi'
-import Curriculum from '../Curriculum/Curriculum'
+import Formación from '../Curriculum/Formación'
 import Experiencia from '../Experiencia/Experiencia'
 
 const Páginas = ({ pageState }) => {
@@ -10,7 +10,7 @@ const Páginas = ({ pageState }) => {
     <div className="pages">
       <Home state={pageState.home}/>
       <SobreMi state={pageState.user}/>
-      <Curriculum state={pageState.curriculum}/>
+      <Formación state={pageState.curriculum}/>
       <Experiencia state={pageState.xp}/>
     </div>
   )

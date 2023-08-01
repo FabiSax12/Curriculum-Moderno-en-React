@@ -48,6 +48,10 @@
     content: "Experiencia";
     left: -17px;
 }
+.navegacion_btn.envelope::after {
+    content: "Contacto";
+    left: -10px;
+}
 
 /* Hover */
 .navegacion_btn:hover::after {

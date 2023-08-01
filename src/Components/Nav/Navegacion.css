@@ -1,15 +1,12 @@
 .navegacion {
-    margin-top: 40px;
-}
-
-.navegacion_icons {
-    width: 250px;
+    width: 300px;
     height: 50px;
-    margin: auto;
+    padding: 0 10px;
+    margin: 40px auto 0;
     border-radius: 50px;
     background-color: #fff;
     box-shadow: 3px 3px 30px gray;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }

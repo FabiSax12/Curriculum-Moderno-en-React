@@ -5,7 +5,8 @@ export const usePageStates = () => {
     home: "active",
     user: "inactive",
     curriculum: "inactive",
-    xp: "inactive"
+    xp: "inactive",
+    contact: "inactive"
   });
 
   const toggleState = (pageId) => {

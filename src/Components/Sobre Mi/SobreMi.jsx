@@ -2,12 +2,12 @@ import "./SobreMi.css"
 import { useFirstActivation } from "../../hooks/useFirstActivation";
 
 const SobreMi = ({ state }) => {
-  useFirstActivation("sobreMi", state)
+  const {pageContentRef} = useFirstActivation(state, "show")
 
   return (
     <div className={`sobremi ${state}`} id="sobreMi">
       <h2 className="title">Sobre Mi</h2>
-      <div className="content">
+      <div className="content" ref={pageContentRef}>
         <section className="sobremi__info-personal">
           <p>
             Joven apasionado por la ingeniería y la resolución de problemas, adicto al aprendizaje y fanático de los verdaderos retos.<br />

@@ -5,15 +5,14 @@ import emailjs from "@emailjs/browser"
 import { useFirstActivation } from "../../hooks/useFirstActivation"
 
 const Contact = ({state}) => {
-  useFirstActivation("contact", state)
-
   const [isSending, setIsSending] = useState(false)
-  const form = useRef(null)
+  const {pageContentRef} = useFirstActivation(state, "show")
 
+  const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
-    emailjs.sendForm('service_ajzh9ce', 'template_xyvun5k', e.target, 'sIXy50I3C07pm9WK8')
+    emailjs.sendForm('service_ajzh9ce', 'template_xyvun5k', form.current, 'sIXy50I3C07pm9WK8')
       .then(res => {
         console.log(res);
         setIsSending(false);
@@ -24,9 +23,9 @@ const Contact = ({state}) => {
   }
 
   return (
-    <div className={`page_contacto ${state}`} id="contact">
+    <div className={`page_contacto ${state}`} id="contact" >
       <h2 className="title">Contacto</h2>
-      <div className="content">
+      <div className="content" ref={pageContentRef}>
         <form ref={form} onSubmit={sendEmail}>
           <div className="input_container">
             <label htmlFor="nombre">Nombre</label>

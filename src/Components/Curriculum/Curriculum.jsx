@@ -4,12 +4,12 @@ import { useFirstActivation } from "../../hooks/useFirstActivation";
 
 
 const Formación = ({ state }) => {
-  useFirstActivation("formación", state)
+  const {pageContentRef} = useFirstActivation(state, "show")
 
   return (
     <div className={`page_formación ${state}`} id="formación">
       <h2 className="title">Currículum</h2>
-      <div className="content">
+      <div className="content" ref={pageContentRef}>
         <section className="experiencia_laboral">
           <h3 className="subtitle">Experiencia Laboral</h3>
           <Trabajos 

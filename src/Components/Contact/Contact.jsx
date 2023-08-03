@@ -11,15 +11,15 @@ const Contact = ({state}) => {
         <form action="">
           <div className="input_container">
             <label htmlFor="email">Correo</label>
-            <input type="email" className="form_input" id="email" placeholder="tucorreo@email.com" />
+            <input type="email" className="form_input" id="email"  />
           </div>
           <div className="input_container">
             <label htmlFor="asunto">Asunto</label>
-            <input type="text" className="form_input" id="asunto" placeholder="Asunto" />
+            <input type="text" className="form_input" id="asunto"  />
           </div>
           <div className="input_container">
             <label htmlFor="mensaje">Mensaje</label>
-            <textarea type="" className="form_input" id="mensaje" placeholder="Mensaje" />
+            <textarea type="" className="form_input" id="mensaje"  />
           </div>
           <button type="button" className="form_button">Enviar Email</button>
         </form>

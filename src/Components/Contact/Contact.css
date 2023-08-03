@@ -9,13 +9,21 @@ form {
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .input_container {
   margin: 0 auto;
+  position: relative;
 }
 
 label {
   display: block;
+  padding: 0 8px;
+  background-color: #fff;
+  color: var(--third);
+  position: absolute;
+  top: -7px;
+  left: 25px;
+  font-size: .8em;
+  font-weight: 600;
 }
 
 .form_input {
@@ -27,7 +35,7 @@ label {
   outline: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.form_input:focus {
+.form_input:focus{
   border-color: var(--primary);
 }
 

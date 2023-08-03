@@ -1,20 +1,23 @@
 import { useRef, useState } from "react"
 import "./Contact.css"
-import { useFirstActivation } from "../../hooks/useFirstActivation"
+import LoadSpin from "../Load-Spin/LoadSpin"
 import emailjs from "@emailjs/browser"
+import { useFirstActivation } from "../../hooks/useFirstActivation"
 
 const Contact = ({state}) => {
-  const [isSending, setIsSending] = useState(false)
-
   useFirstActivation("contact", state)
 
+  const [isSending, setIsSending] = useState(false)
   const form = useRef(null)
+
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
     emailjs.sendForm('service_ajzh9ce', 'template_xyvun5k', e.target, 'sIXy50I3C07pm9WK8')
       .then(res => {
-        console.log(res)
-        form.current.reset()
+        console.log(res);
+        setIsSending(false);
+        form.current.reset();
       })
       .catch(err => alert("No se puedo enviar el email, por favor vuelve a intentarlo más tarde"))
     ;
@@ -43,6 +46,7 @@ const Contact = ({state}) => {
           </div>
           <button type="submit" className="form_button">Enviar Email</button>
         </form>
+        <LoadSpin state={isSending ? "active" : "inactive"}/>
       </div>
     </div>
   )

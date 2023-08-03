@@ -30,6 +30,12 @@ body {
     border-bottom: 2px solid var(--primary);
 }
 
+.subtitle {
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .inactive {
     display: none;
 }

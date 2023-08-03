@@ -27,7 +27,7 @@ const Navegacion = ({ click }) => {
         icon={faBriefcase} 
         name="brief-case"
         clickBtn={click}
-        pageToActive="xp"
+        pageToActive="proyectos"
       />
       <PageIcon
         icon={faEnvelope} 

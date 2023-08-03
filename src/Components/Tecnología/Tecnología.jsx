@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Tecnología = ({icon}) => {
   return (
-    <>
-      <FontAwesomeIcon icon={icon} />
-    </>
+  <div className="skill">
+    <FontAwesomeIcon icon={icon} />
+  </div>
   )
 }
 

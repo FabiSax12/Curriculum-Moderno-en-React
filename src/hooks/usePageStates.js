@@ -5,7 +5,7 @@ export const usePageStates = () => {
     home: "active",
     user: "inactive",
     curriculum: "inactive",
-    xp: "inactive",
+    proyectos: "inactive",
     contact: "inactive"
   });
 

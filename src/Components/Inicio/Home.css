@@ -1,8 +1,12 @@
 .page_home {
+    width: 100%;
+    height: 100%;
+}
+
+.page_home_title {
     width: max-content;
     height: max-content;
-    margin: auto;
-    margin-top: 220px;
+    margin: 200px auto 0;
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
@@ -11,7 +15,34 @@
 }
 
 .page_home h4 {
-    color: #736d6dd0;
+    color: var(--third);
+}
+
+.skills{
+    margin: 30px auto 0;
+    width: calc(32px * 6 + 20px * 6);
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    opacity: 1;
+    animation: skills-show-delay 2s linear;
+}
+.skills__container {
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+    animation: slide 15s linear infinite;
+    -webkit-animation: slide 15s linear infinite;
+    width: calc(32px * 12);
+}
+
+.skill {
+    width: 32px;
+}
+
+.skill svg{
+    color: var(--third);
+    zoom: 2;
 }
 
 /* ----- ----- KEYFRAMES ----- ----- */
@@ -21,6 +52,29 @@
         margin-top: 400px;
     }
     100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc((-32px * 6 + -20px * 6)));
+        transform: translateX(calc((-32px * 6 + -20px * 6)));
+    }
+}
+
+@keyframes skills-show-delay {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
         opacity: 1;
     }
 }

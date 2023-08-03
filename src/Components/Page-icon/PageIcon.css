@@ -2,8 +2,7 @@
 .navegacion_btn {
     width: 50px;
     height: 50px;
-    border: 1px solid transparent;
-    border-radius: 50%;
+    border: none;
     background-color: transparent;
     cursor: pointer;
     position: relative;
@@ -41,12 +40,12 @@
     left: -8px;
 }
 .navegacion_btn.cap::after {
-    content: "Formación";
+    content: "Curriculum";
     left: -14px;
 }
 .navegacion_btn.brief-case::after {
-    content: "Experiencia";
-    left: -17px;
+    content: "Proyectos";
+    left: -11px;
 }
 .navegacion_btn.envelope::after {
     content: "Contacto";

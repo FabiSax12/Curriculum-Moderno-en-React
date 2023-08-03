@@ -6,6 +6,7 @@ import { useFirstActivation } from "../../hooks/useFirstActivation"
 
 const Contact = ({state}) => {
   const [isSending, setIsSending] = useState(false)
+  const contentRef = useRef()
   const {pageContentRef} = useFirstActivation(state, "show")
 
   const form = useRef()
@@ -14,7 +15,6 @@ const Contact = ({state}) => {
     setIsSending(true);
     emailjs.sendForm('service_ajzh9ce', 'template_xyvun5k', form.current, 'sIXy50I3C07pm9WK8')
       .then(res => {
-        console.log(res);
         setIsSending(false);
         form.current.reset();
       })

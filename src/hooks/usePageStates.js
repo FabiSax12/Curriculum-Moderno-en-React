@@ -9,18 +9,16 @@ export const usePageStates = () => {
     contact: "inactive"
   });
 
-  const toggleState = (pageId) => {
-    setPageState(prevPageState => {
-      const newPageState = {};
-      Object.keys(prevPageState).forEach(key => {
-        newPageState[key] = key === pageId ? "active" : "inactive";
-      });
-      return newPageState;
-    });
+  const activatePage = (pageId) => {
+    const newPageState = {};
+    for (const key in pageState) {
+      newPageState[key] = key === pageId ? "active" : "inactive";
+    }
+    setPageState(newPageState);
   };
 
-  return {pageState, toggleState}
-}
+  return { pageState, activatePage };
+};
 
 
 

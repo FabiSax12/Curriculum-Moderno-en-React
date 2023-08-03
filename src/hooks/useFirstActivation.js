@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 export function useFirstActivation(state, animationClass) {
   const [isFirstActivation, setIsFirstActivation] = useState(true);
-  const pageContentRef = useRef();
+  const pageContentRef = useRef(null);
 
   useEffect(() => {
     const pageContent = pageContentRef.current;
@@ -14,7 +14,6 @@ export function useFirstActivation(state, animationClass) {
       pageContent?.classList.remove(animationClass);
       setTimeout(() => pageContent?.classList.add(animationClass), 400);
       setIsFirstActivation(false);
-      console.log(pageContent)
     }
   }, [state]);
 

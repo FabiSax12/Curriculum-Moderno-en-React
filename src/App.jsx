@@ -5,7 +5,7 @@ import Navegacion from "./Components/Nav/Navegacion"
 import { usePageStates } from './hooks/usePageStates';
 
 function App() {
-  const {pageState, toggleState} = usePageStates()
+  const {pageState, activatePage} = usePageStates()
   
   return (
     <>
@@ -13,7 +13,7 @@ function App() {
         <Sidebar />
         <Paginas pageState={pageState} />
       </div>
-      <Navegacion click={toggleState} />
+      <Navegacion click={activatePage} />
     </>
   )
 }

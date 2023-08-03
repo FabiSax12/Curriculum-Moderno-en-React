@@ -1,21 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-export function useFirstActivation(page, state){
+export function useFirstActivation(state, animationClass) {
   const [isFirstActivation, setIsFirstActivation] = useState(true);
-  const currentPage = document.getElementById(page)
-  
+  const pageContentRef = useRef();
+
   useEffect(() => {
+    const pageContent = pageContentRef.current;
+
     if (state === "inactive") {
       setIsFirstActivation(true);
+      pageContent?.classList.remove(animationClass)
+    } else if (state === "active" && isFirstActivation) {
+      pageContent?.classList.remove(animationClass);
+      setTimeout(() => pageContent?.classList.add(animationClass), 400);
+      setIsFirstActivation(false);
+      console.log(pageContent)
     }
   }, [state]);
 
-  if (state == "active" && isFirstActivation) {
-    const pageContent = currentPage.querySelector("div.content");
-    pageContent.classList.remove("show");
-    setTimeout(() => pageContent.classList.add("show"), 400);
-    setIsFirstActivation(false);
-  }
-
-  return isFirstActivation;
+  return { pageContentRef };
 }

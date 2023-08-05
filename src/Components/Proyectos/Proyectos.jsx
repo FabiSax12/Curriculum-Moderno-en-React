@@ -21,19 +21,19 @@ const Proyectos = ({ state }) => {
         <div className="proyects_container">
           <ProyectCard 
             proyectName="Página de Popis"
-            imageSrc="./src/assets/proyectos/Popis-React.png"
+            imageSrc="D:\Programación\Proyectos Web\.curriculum-moderno-react\src\assets\proyectos\Popis-React.PNG"
             icons={[faHtml5, faCss3Alt, faJsSquare]}
             repo="https://github.com/FabiSax12/Popis-React"
             link="https://popis-react.vercel.app"
           />
           <ProyectCard 
             proyectName="Agente de Ventas"
-            imageSrc="./src/assets/foto-de-perfil.jpg"
+            imageSrc="D:\Programación\Proyectos Web\.curriculum-moderno-react\src\assets\foto-de-perfil.jpg"
             icons={[faHtml5, faCss3Alt]}
           />
           <ProyectCard 
             proyectName="4 en raya"
-            imageSrc="./src/assets/foto-de-perfil.jpg"
+            imageSrc="D:\Programación\Proyectos Web\.curriculum-moderno-react\src\assets\foto-de-perfil.jpg"
             icons={[faReact, faBootstrap]}
           />
         </div>

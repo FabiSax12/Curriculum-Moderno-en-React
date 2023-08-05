@@ -23,3 +23,12 @@ li.filtro_selected {
     transform: scale(1.2);
     color: var(--primary);
 }
+
+.proyects_container {
+    margin: 20px auto;
+    max-width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}

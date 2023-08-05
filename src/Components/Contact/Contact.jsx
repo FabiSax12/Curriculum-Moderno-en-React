@@ -3,6 +3,7 @@ import "./Contact.css"
 import LoadSpin from "../Load-Spin/LoadSpin"
 import emailjs from "@emailjs/browser"
 import { useFirstActivation } from "../../hooks/useFirstActivation"
+import FormularioEmail from "../Formulario/FormularioEmail"
 
 const Contact = ({state}) => {
   const [isSending, setIsSending] = useState(false)
@@ -46,6 +47,7 @@ const Contact = ({state}) => {
           <button type="submit" className="form_button">Enviar Email</button>
         </form>
         <LoadSpin state={isSending ? "active" : "inactive"}/>
+        <FormularioEmail />
       </div>
     </div>
   )

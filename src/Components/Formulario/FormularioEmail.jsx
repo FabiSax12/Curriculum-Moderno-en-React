@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser"
 import InputContainer from '../InputContainer/InputContainer'
 
 const FormularioEmail = ({reference, sendState: setIsSending}) => {
-  const {register, handleSubmit, formState: {errors}} = useForm()
+  const {register, handleSubmit, formState: {errors}} = useForm({mode: "onChange"})
   const inputs = ["nombre", "email", "asunto", "mensaje"];
   
   const onSumbmit = async (data) => {
@@ -13,6 +13,7 @@ const FormularioEmail = ({reference, sendState: setIsSending}) => {
       await emailjs.sendForm('service_ajzh9ce', 'template_xyvun5k', reference.current, 'sIXy50I3C07pm9WK8')
         .then(res => {
           setIsSending(false);
+          
         })
       ;
       reference.current.reset()
@@ -23,7 +24,7 @@ const FormularioEmail = ({reference, sendState: setIsSending}) => {
   }
 
   return (
-    <form ref={reference} onSubmit={handleSubmit(onSumbmit)}>
+    <form ref={reference} >
       {inputs.map((input, idx) => (
         <InputContainer key={idx}
           nameTag = {input !== "mensaje" ? "input" : "textarea"}
@@ -37,7 +38,7 @@ const FormularioEmail = ({reference, sendState: setIsSending}) => {
           errors={errors}
         />
         ))}
-      <button type="submit" className="form_button">Enviar Email</button>
+      <button type="submit" className="form_button" onClick={handleSubmit(onSumbmit)}>Enviar Email</button>
     </form>
   )
 }

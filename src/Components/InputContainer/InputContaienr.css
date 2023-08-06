@@ -1,0 +1,50 @@
+.input_container {
+  margin: 0 auto;
+  position: relative;
+}
+
+label {
+  display: block;
+  padding: 0 8px;
+  color: var(--third);
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  font-size: .8em;
+  font-weight: 600;
+  transition: all .1s ease;
+  text-transform: capitalize;
+}
+
+label.label-focused {
+  top: -18px;
+  left: 10px;
+}
+
+.form_input {
+  min-width: 400px;
+  max-width: 400px;
+  padding: 8px 14px;
+  border: 2px solid var(--third);
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form_input:focus{
+  border-color: var(--primary);
+}
+
+.form_button {
+  padding: .5em 1em;
+  margin: 0 auto;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: transform .3s ease;
+}
+.form_button:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+}

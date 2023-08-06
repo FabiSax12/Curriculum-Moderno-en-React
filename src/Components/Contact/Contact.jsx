@@ -1,7 +1,6 @@
 import "./Contact.css"
 import { useFirstActivation } from "../../hooks/useFirstActivation"
 import FormularioEmail from "../Formulario/FormularioEmail"
-import PrevisualizaciónCorreo from "../Prev-Correo/PrevisualizaciónCorreo"
 
 const Contact = ({state}) => {
   const {pageContentRef} = useFirstActivation(state, "show")

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function InputContainer({ nameTag = "input", type, registerName, labelText, registerData, errors }) {
   const [isInputFocused, setIsInputFocused] = useState(false);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState("")
 
   return (
     <div className="input_container">
@@ -36,8 +36,7 @@ function InputContainer({ nameTag = "input", type, registerName, labelText, regi
           {...registerData}
           />
       )}
-      {errors[registerName]?.type === "required" && <InputMessage mensaje="Este campo es obligatorio"/>}
-      {errors[registerName]?.type === "pattern" && <InputMessage mensaje="El email no es válido"/>}
+      {errors[registerName] && <InputMessage mensaje={(errors[registerName].message)}/>}
     </div>
   );
 }

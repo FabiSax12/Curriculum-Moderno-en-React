@@ -1,0 +1,30 @@
+{
+  "nombre":{
+    "required": {
+      "value":true, 
+      "message": "Nombre es requerido"
+    }
+  },
+  "email":{
+    "pattern": {
+      "value": "/^\\w+([.-_+]?\\w+)*@\\w+([.-]?\\w+)*(\\.\\w{2,10})+$/",
+      "message": "El email es inválido"
+    },
+    "required": {
+      "value":true, 
+      "message": "Email es requerido"
+    }
+  },
+  "asunto":{
+    "required": {
+      "value":true, 
+      "message": "Asunto es requerido"
+    }
+  },
+  "mensaje":{
+    "minLength": {
+      "value": 5,
+      "message": "El mensaje debe tener mínimo 5 caracteres"
+    }
+  }
+}

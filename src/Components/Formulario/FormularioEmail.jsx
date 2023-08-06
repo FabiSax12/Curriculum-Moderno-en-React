@@ -35,8 +35,14 @@ const FormularioEmail = () => {
             registerName={input}
             labelText={input}
             registerData={register(input, {
-              required: true,
-              pattern: input !== 'email' ? null : /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/,
+              required: {
+                value: true,
+                message: `${input} es requerido`
+              },
+              pattern: {
+                value: input === "email" ? /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/ : "",
+                message: "El email no es válido"
+              }
             })}
             errors={errors}
           />

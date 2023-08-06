@@ -1,0 +1,4 @@
+.mensaje_input {
+  color: var(--clr-error);
+  padding: 5px 10px;
+}

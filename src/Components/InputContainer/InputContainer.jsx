@@ -1,3 +1,4 @@
+import InputMessage from "../Mensaje-de-input/InputMessage";
 import "./InputContaienr.css"
 import { useState } from "react";
 
@@ -35,8 +36,8 @@ function InputContainer({ nameTag = "input", type, registerName, labelText, regi
           {...registerData}
           />
       )}
-      {errors[registerName]?.type === "required" && <h4>REQUERIDO</h4>}
-      {errors[registerName]?.type === "pattern" && <h4>Email Inválido</h4>}
+      {errors[registerName]?.type === "required" && <InputMessage mensaje="Este campo es obligatorio"/>}
+      {errors[registerName]?.type === "pattern" && <InputMessage mensaje="El email no es válido"/>}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .input_container {
-  margin: 0 auto;
+  margin-right: 50px;
   position: relative;
 }
 
@@ -22,13 +22,15 @@ label.label-focused {
 }
 
 .form_input {
-  min-width: 400px;
-  max-width: 400px;
+  width: 100%;
   padding: 8px 14px;
   border: 2px solid var(--third);
   border-radius: 5px;
   outline: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+textarea.form_input {
+  resize: vertical;
 }
 .form_input:focus{
   border-color: var(--primary);

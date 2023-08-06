@@ -1,0 +1,37 @@
+.previsualización_container {
+  padding: 5px;
+  max-width: 400px;
+  /* min-width: 240px; */
+  min-height: 200px;
+  height: max-content;
+  display: inline;
+  border: 1px dashed var(--third);
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.email_title {
+  font-size: 0.9em;
+}
+.email_to {
+  font-size: 0.7em;
+}
+.email_asunto {
+  font-size: 0.8em;
+}
+.email_message {
+  font-size: 0.6em;
+  line-height: normal;
+}
+
+.email_from {
+  margin-top: 20px;
+  border-top: 2px dashed var(--third);
+  font-size: .6em;
+}
+
+@media screen and (max-width: 900px) {
+  .previsualización_container{
+    display: none;
+  }
+}

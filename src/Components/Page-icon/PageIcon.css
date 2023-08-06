@@ -49,7 +49,7 @@
 }
 .navegacion_btn.envelope::after {
     content: "Contacto";
-    left: -10px;
+    left: -7px;
 }
 
 /* Hover */

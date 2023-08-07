@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar__img">
-        <img src="src\assets\foto-de-perfil.jpg" alt="foto De Perfil" />
+        <img src="public/foto-de-perfil.jpg" alt="foto De Perfil" />
       </div>
       <div className="sidebar__texto">
         <h3>Fabián Vargas</h3>

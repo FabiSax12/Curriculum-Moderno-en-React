@@ -1,3 +1,4 @@
+import "./Skills.css";
 import Tecnología from "../Tecnología/Tecnología";
 import {
   faHtml5,
@@ -8,9 +9,9 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Skills = () => {
+const Skills = ({ animation }) => {
   return (
-    <div className="skills__container">
+    <div className={`skills__container ${animation ? "animation" : ""}`}>
       <Tecnología icon={faHtml5} />
       <Tecnología icon={faCss3Alt} />
       <Tecnología icon={faSquareJs} />

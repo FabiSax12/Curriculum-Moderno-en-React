@@ -33,14 +33,16 @@ const Proyectos = ({ state }) => {
             link="https://popis-react.vercel.app"
           />
           <ProyectCard
-            proyectName="Agente de Ventas"
-            imageSrc="/foto-de-perfil.jpg"
-            icons={[faHtml5, faCss3Alt]}
+            proyectName="Portfolio"
+            imageSrc="/proyectos/portfolio.PNG"
+            icons={[faCss3Alt, faReact]}
+            repo="https://github.com/FabiSax12/curriculum-moderno-en-react"
+            link="https://curriculum-moderno-en-react.vercel.app"
           />
           <ProyectCard
-            proyectName="4 en raya"
+            proyectName="Artamy"
             imageSrc="/foto-de-perfil.jpg"
-            icons={[faReact, faBootstrap]}
+            icons={[faCss3Alt, faReact]}
           />
         </div>
       </div>

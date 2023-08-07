@@ -27,23 +27,6 @@
     opacity: 1;
     animation: skills-show-delay 2s linear;
 }
-.skills__container {
-    margin-right: 20px;
-    display: flex;
-    gap: 20px;
-    animation: slide 15s linear infinite;
-    -webkit-animation: slide 15s linear infinite;
-    width: calc(32px * 12);
-}
-
-.skill {
-    width: 32px;
-}
-
-.skill svg{
-    color: var(--third);
-    zoom: 2;
-}
 
 /* ----- ----- KEYFRAMES ----- ----- */
 @keyframes home-intro{

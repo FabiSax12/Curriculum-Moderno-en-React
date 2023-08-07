@@ -8,38 +8,35 @@ const SobreMi = ({ state }) => {
     <div className={`sobremi ${state}`} id="sobreMi">
       <h2 className="title">Sobre Mi</h2>
       <div className="content" ref={pageContentRef}>
-        <section className="sobremi__info-personal">
-          <p>
-            Joven apasionado por la ingeniería y la resolución de problemas,
-            adicto al aprendizaje y fanático de los verdaderos retos.
-            <br />
-            Desarrollador Front-End en progreso...
-          </p>
+        <p className="sobremi__texto">
+          Joven apasionado por la ingeniería y la resolución de problemas,
+          adicto al aprendizaje y fanático de los verdaderos retos.
+          <br />
+          Desarrollador Front-End en progreso...
+        </p>
+        <section className="hard-soft_skills">
           <div>
-            <p>
-              <strong>Edad</strong> 18 años{" "}
-            </p>
-            <p>
-              <strong>País</strong> Costa Rica
-            </p>
-            <p>
-              <strong>Correo</strong> fabidev18@gmail.com
-            </p>
-            <p>
-              <strong>Teléfono</strong> +506 8516-0370
-            </p>
+            <h2 className="subtitle">Tech Stack / Hard Skills</h2>
+            <div className="techStack">
+              <img src="/tecnologías/html.png" alt="HTML Logo" />
+              <img src="/tecnologías/css.png" alt="CSS Logo" />
+              <img src="/tecnologías/js.png" alt="JavaScript Logo" />
+              <img src="/tecnologías/react.png" alt="React Logo" />
+              <img src="/tecnologías/git.webp" alt="Git Logo" />
+              <img src="/tecnologías/github.png" alt="Github Logo" />
+            </div>
           </div>
-        </section>
-        <section className="sobremi__aptitudes">
-          <h2 className="sobremi__aptitudes_title">{"< Aptitudes />"}</h2>
-          <ul className="sobremi__aptitudes_lista">
-            <li>Deseo de aprender cosas nuevas</li>
-            <li>Inteligente</li>
-            <li>Responsable y puntual.</li>
-            <li>Adaptación.</li>
-            <li>Atento y buen oyente.</li>
-            <li>Trabajo en equipo.</li>
-          </ul>
+          <div>
+            <h2 className="subtitle">Soft Skills</h2>
+            <ul className="sobremi__aptitudes_lista">
+              <li>Deseo de aprender cosas nuevas</li>
+              <li>Inteligente</li>
+              <li>Responsable y puntual.</li>
+              <li>Adaptación.</li>
+              <li>Atento y buen oyente.</li>
+              <li>Trabajo en equipo.</li>
+            </ul>
+          </div>
         </section>
       </div>
     </div>

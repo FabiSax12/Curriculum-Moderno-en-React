@@ -9,8 +9,8 @@ const Home = ({ state }) => {
         <h4>Estudiante de Desarrollo Web</h4>
       </div>
       <section className="skills">
-        <Skills />
-        <Skills />
+        <Skills animation={true} />
+        <Skills animation={true} />
       </section>
     </div>
   );

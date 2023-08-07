@@ -1,12 +1,12 @@
-import "./Tecnología.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "./Tecnología.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Tecnología = ({icon}) => {
+const Tecnología = ({ icon }) => {
   return (
-  <div className="skill">
-    <FontAwesomeIcon icon={icon} />
-  </div>
-  )
-}
+    <div className="skill">
+      <FontAwesomeIcon icon={icon} />
+    </div>
+  );
+};
 
-export default Tecnología
+export default Tecnología;

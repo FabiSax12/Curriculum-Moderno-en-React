@@ -1,6 +1,10 @@
-import "./Sidebar.css"
-import Redes from '../Redes/Redes'
-import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import "./Sidebar.css";
+import Redes from "../Redes/Redes";
+import {
+  faInstagram,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   return (
@@ -20,16 +24,19 @@ const Sidebar = () => {
             link="https://www.linkedin.com/in/fabi%C3%A1n-vargas-araya-796ab3275/"
             icon={faLinkedin}
           />
-          <Redes
-            link="https://github.com/FabiSax12"
-            icon={faGithub}
-          />
+          <Redes link="https://github.com/FabiSax12" icon={faGithub} />
         </div>
-        <a className="sidebar_cv" href="https://drive.google.com/file/d/1a5xcLBPVEG066bi3edVpJRy1U7VvyNPW/view?usp=drive_link" target="_blank">Descargar CV</a>
+        <a
+          className="sidebar_cv"
+          href="https://drive.google.com/file/d/1a5xcLBPVEG066bi3edVpJRy1U7VvyNPW/view?usp=drive_link"
+          target="_blank"
+        >
+          Descargar CV
+        </a>
         <p className="sidebar__copyrigth">2023 Fabián Vargas Araya</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

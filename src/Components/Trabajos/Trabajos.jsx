@@ -1,18 +1,18 @@
-import "./Trabajos.css"
+import "./Trabajos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 
-const Trabajos = ({lugar, inicio, final, puesto, descripcion}) => {
+const Trabajos = ({ lugar, inicio, final, puesto, descripcion }) => {
   return (
     <div className="trabajo">
       <h3 className="content_lugar-fecha">
         {lugar}
         <p>
-          {inicio} <br/> {final}
+          {inicio} <br /> {final}
         </p>
       </h3>
       <div className="content_icon">
-        <FontAwesomeIcon icon={faCircle} className="icon"/>
+        <FontAwesomeIcon icon={faCircle} className="icon" />
         <div className="adorno"></div>
       </div>
       <div className="content_info">

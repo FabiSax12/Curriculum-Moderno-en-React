@@ -1,16 +1,25 @@
 import InputMessage from "../Mensaje-de-input/InputMessage";
-import "./InputContaienr.css"
+import "./InputContaienr.css";
 import { useState } from "react";
 
-function InputContainer({ nameTag = "input", type, registerName, labelText, registerData, errors }) {
+function InputContainer({
+  nameTag = "input",
+  type,
+  registerName,
+  labelText,
+  registerData,
+  errors,
+}) {
   const [isInputFocused, setIsInputFocused] = useState(false);
-  const [inputValue, setInputValue] = useState("")
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <div className="input_container">
       <label
         htmlFor={registerName}
-        className={isInputFocused ? "label-focused" : inputValue ? "label-focused" : ""}
+        className={
+          isInputFocused ? "label-focused" : inputValue ? "label-focused" : ""
+        }
       >
         {labelText}
       </label>
@@ -34,11 +43,13 @@ function InputContainer({ nameTag = "input", type, registerName, labelText, regi
           onFocus={() => setIsInputFocused(true)}
           onBlur={() => setIsInputFocused(false)}
           {...registerData}
-          />
+        />
       )}
-      {errors[registerName] && <InputMessage mensaje={(errors[registerName].message)}/>}
+      {errors[registerName] && (
+        <InputMessage mensaje={errors[registerName].message} />
+      )}
     </div>
   );
 }
 
-export default InputContainer
+export default InputContainer;

@@ -1,6 +1,12 @@
-import "./Navegacion.css"
-import PageIcon from '../Page-icon/PageIcon'
-import { faHome, faUser, faGraduationCap, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import "./Navegacion.css";
+import PageIcon from "../Page-icon/PageIcon";
+import {
+  faHome,
+  faUser,
+  faGraduationCap,
+  faBriefcase,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navegacion = ({ click }) => {
   return (
@@ -11,8 +17,8 @@ const Navegacion = ({ click }) => {
         clickBtn={click}
         pageToActive="home"
       />
-      <PageIcon 
-        icon={faUser} 
+      <PageIcon
+        icon={faUser}
         name="user"
         clickBtn={click}
         pageToActive="user"
@@ -24,19 +30,19 @@ const Navegacion = ({ click }) => {
         pageToActive="curriculum"
       />
       <PageIcon
-        icon={faBriefcase} 
+        icon={faBriefcase}
         name="brief-case"
         clickBtn={click}
         pageToActive="proyectos"
       />
       <PageIcon
-        icon={faEnvelope} 
+        icon={faEnvelope}
         name="envelope"
         clickBtn={click}
         pageToActive="contact"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Navegacion
+export default Navegacion;

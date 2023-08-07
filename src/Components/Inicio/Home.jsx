@@ -1,8 +1,7 @@
-import "./Home.css"
-import Skills from "../Skills/Skills"
+import "./Home.css";
+import Skills from "../Skills/Skills";
 
 const Home = ({ state }) => {
-
   return (
     <div className={`page_home ${state}`}>
       <div className="page_home_title">
@@ -14,7 +13,7 @@ const Home = ({ state }) => {
         <Skills />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

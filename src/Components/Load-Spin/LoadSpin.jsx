@@ -1,6 +1,6 @@
-import "./LoadSpin.css"
+import "./LoadSpin.css";
 
-const LoadSpin = ({state}) => {
+const LoadSpin = ({ state }) => {
   return (
     <div className={`sk-circle ${state}`}>
       <div className="sk-circle1 sk-child"></div>
@@ -16,7 +16,7 @@ const LoadSpin = ({state}) => {
       <div className="sk-circle11 sk-child"></div>
       <div className="sk-circle12 sk-child"></div>
     </div>
-  )
-}
+  );
+};
 
-export default LoadSpin
+export default LoadSpin;

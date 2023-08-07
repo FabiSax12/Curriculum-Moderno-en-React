@@ -1,10 +1,16 @@
-import "./Proyectos.css"
+import "./Proyectos.css";
 import { useFirstActivation } from "../../hooks/useFirstActivation";
 import ProyectCard from "../ProyectCard/ProyectCard";
-import {faHtml5, faCss3Alt, faJsSquare, faReact, faBootstrap} from "@fortawesome/free-brands-svg-icons"
+import {
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faReact,
+  faBootstrap,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Proyectos = ({ state }) => {
-  const {pageContentRef} = useFirstActivation(state, "show")
+  const { pageContentRef } = useFirstActivation(state, "show");
 
   return (
     <div className={`page_proyectos ${state}`} id="proyectos">
@@ -19,19 +25,19 @@ const Proyectos = ({ state }) => {
           </ul>
         </nav>
         <div className="proyects_container">
-          <ProyectCard 
+          <ProyectCard
             proyectName="Página de Popis"
             imageSrc="./src/assets/proyectos/Popis-React.png"
             icons={[faHtml5, faCss3Alt, faJsSquare]}
             repo="https://github.com/FabiSax12/Popis-React"
             link="https://popis-react.vercel.app"
           />
-          <ProyectCard 
+          <ProyectCard
             proyectName="Agente de Ventas"
             imageSrc="./src/assets/foto-de-perfil.jpg"
             icons={[faHtml5, faCss3Alt]}
           />
-          <ProyectCard 
+          <ProyectCard
             proyectName="4 en raya"
             imageSrc="./src/assets/foto-de-perfil.jpg"
             icons={[faReact, faBootstrap]}
@@ -39,7 +45,7 @@ const Proyectos = ({ state }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Proyectos
+export default Proyectos;

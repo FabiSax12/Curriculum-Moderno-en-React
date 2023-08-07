@@ -9,7 +9,7 @@ export function useFirstActivation(state, animationClass) {
 
     if (state === "inactive") {
       setIsFirstActivation(true);
-      pageContent?.classList.remove(animationClass)
+      pageContent?.classList.remove(animationClass);
     } else if (state === "active" && isFirstActivation) {
       pageContent?.classList.remove(animationClass);
       setTimeout(() => pageContent?.classList.add(animationClass), 400);

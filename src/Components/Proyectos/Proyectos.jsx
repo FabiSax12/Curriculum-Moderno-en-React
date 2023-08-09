@@ -35,15 +35,23 @@ const Proyectos = ({ state }) => {
           <ProyectCard
             proyectName="Portfolio"
             imageSrc="/proyectos/portfolio.PNG"
-            icons={[faCss3Alt, faReact]}
+            icons={[faReact]}
             repo="https://github.com/FabiSax12/curriculum-moderno-en-react"
             link="https://curriculum-moderno-en-react.vercel.app"
           />
           <ProyectCard
             proyectName="Artamy"
-            imageSrc="/foto-de-perfil.jpg"
-            icons={[faCss3Alt, faReact]}
+            imageSrc="/proyectos/Artamy.PNG"
+            icons={[faReact]}
           />
+          <ProyectCard 
+            proyectName="Conecta 4"
+            imageSrc="/proyectos/Conecta-4.PNG"
+            icons={[faReact]}
+            repo="https://github.com/FabiSax12/conecta-4"
+            link="https://conecta-4-two.vercel.app"
+          />
+          <div/>
         </div>
       </div>
     </div>

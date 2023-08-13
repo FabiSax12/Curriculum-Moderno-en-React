@@ -1,11 +1,11 @@
 import "./SobreMi.css";
 import { useFirstActivation } from "../../hooks/useFirstActivation";
 
-const SobreMi = ({ state }) => {
-  const { pageContentRef } = useFirstActivation(state, "show");
+const SobreMi = () => {
+  const { pageContentRef } = useFirstActivation();
 
   return (
-    <div className={`sobremi ${state}`} id="sobreMi">
+    <div className={`sobremi active`} id="sobreMi">
       <h2 className="title">Sobre Mi</h2>
       <div className="content" ref={pageContentRef}>
         <p className="sobremi__texto">

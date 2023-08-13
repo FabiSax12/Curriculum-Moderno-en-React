@@ -7,40 +7,41 @@ import {
   faBriefcase,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const Navegacion = ({ click }) => {
+const Navegacion = () => {
   return (
     <div className="navegacion">
-      <PageIcon
-        icon={faHome}
-        name="home"
-        clickBtn={click}
-        pageToActive="home"
-      />
-      <PageIcon
-        icon={faUser}
-        name="user"
-        clickBtn={click}
-        pageToActive="user"
-      />
-      <PageIcon
-        icon={faGraduationCap}
-        name="cap"
-        clickBtn={click}
-        pageToActive="curriculum"
-      />
-      <PageIcon
-        icon={faBriefcase}
-        name="brief-case"
-        clickBtn={click}
-        pageToActive="proyectos"
-      />
-      <PageIcon
-        icon={faEnvelope}
-        name="envelope"
-        clickBtn={click}
-        pageToActive="contact"
-      />
+      <Link to="/home">
+        <PageIcon
+          icon={faHome}
+          name="home"
+        />
+      </Link>
+      <Link to="/about">
+        <PageIcon
+          icon={faUser}
+          name="user"
+        />
+      </Link>
+      <Link to="/curriculum">
+        <PageIcon
+          icon={faGraduationCap}
+          name="cap"
+        />
+      </Link>
+      <Link to="/proyects">
+        <PageIcon
+          icon={faBriefcase}
+          name="brief-case"
+        />
+      </Link>
+      <Link to="/contact">
+        <PageIcon
+          icon={faEnvelope}
+          name="envelope"
+        />
+      </Link>
     </div>
   );
 };

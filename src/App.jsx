@@ -1,33 +1,19 @@
 import "./App.css";
-import { useState } from "react";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Paginas from "./Components/Páginas/Páginas";
 import Navegacion from "./Components/Nav/Navegacion";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  const [pageState, setPageState] = useState({
-    home: "active",
-    user: "inactive",
-    curriculum: "inactive",
-    proyectos: "inactive",
-    contact: "inactive",
-  });
-  const activatePage = (pageId) => {
-    const newPageState = {};
-    for (const pageName in pageState) {
-      newPageState[pageName] = pageName === pageId ? "active" : "inactive";
-    }
-    setPageState(newPageState);
-  };
-
+  console.log("Render")
   return (
-    <>
+    <BrowserRouter>
       <div className="principal">
         <Sidebar />
-        <Paginas pageState={pageState} />
+        <Paginas />
       </div>
-      <Navegacion click={activatePage} />
-    </>
+      <Navegacion />
+    </BrowserRouter>
   );
 }
 

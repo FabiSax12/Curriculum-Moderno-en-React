@@ -4,15 +4,19 @@ import SobreMi from "../Sobre Mi/SobreMi";
 import Curriculum from "../Curriculum/Curriculum";
 import Proyectos from "../Proyectos/Proyectos";
 import Contact from "../Contact/Contact";
+import { Routes, Route } from "react-router-dom";
 
-const Páginas = ({ pageState }) => {
+const Páginas = () => {
   return (
     <div className="pages">
-      <Home state={pageState.home} />
-      <SobreMi state={pageState.user} />
-      <Curriculum state={pageState.curriculum} />
-      <Proyectos state={pageState.proyectos} />
-      <Contact state={pageState.contact} />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/about" element={<SobreMi/>}/>
+        <Route path="/curriculum" element={<Curriculum/>}/>
+        <Route path="/proyects" element={<Proyectos/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
     </div>
   );
 };

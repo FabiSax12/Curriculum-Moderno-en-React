@@ -1,4 +1,5 @@
 import "./Proyectos.css";
+import { useState } from "react";
 import { useFirstActivation } from "../../hooks/useFirstActivation";
 import ProyectCard from "../ProyectCard/ProyectCard";
 import {
@@ -9,11 +10,10 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import proyectosData from "../../data/proyectos.json"
-import { useState } from "react";
 
 const Proyectos = () => {
   const { pageContentRef } = useFirstActivation();
-  const [filterState, setFilterState ] = useState(null)
+  const [filterState, setFilterState ] = useState("todos")
 
   const lenguajes = {
     html: faHtml5,
@@ -23,29 +23,28 @@ const Proyectos = () => {
     bootstrap: faBootstrap,
   }
 
+  const handleClick = e => {
+    e.currentTarget.classList.add("selected")
+    const filtro = e.currentTarget.getAttribute("data-value");
+    setFilterState(filtro);
+  }
+
   return (
     <div className={`page_proyectos active`} id="proyectos">
       <h2 className="title">Proyectos</h2>
       <div className="content" ref={pageContentRef}>
         <nav>
-          <ul className="filtros_proyectos">
-            <li>Todos</li>
-            <li>Personales</li>
-            <li>Para Clientes</li>
-            <li>Mini Proyectos</li>
-          </ul>
+        <ul className="filtros_proyectos">
+          <li onClick={handleClick} data-value="todos" className={filterState === "todos" ? "selected" : ""}>Todos</li>
+          <li onClick={handleClick} data-value="personal" className={filterState === "personal" ? "selected" : ""}>Personales</li>
+          <li onClick={handleClick} data-value="cliente" className={filterState === "cliente" ? "selected" : ""}>Para Clientes</li>
+          <li onClick={handleClick} data-value="mini" className={filterState === "mini" ? "selected" : ""}>Mini Proyectos</li>
+        </ul>
         </nav>
         <div className="proyects_container">
-          {/* <ProyectCard
-            proyectName="Portfolio"
-            imageSrc="/proyectos/portfolio.PNG"
-            icons={[faReact]}
-            repo="https://github.com/FabiSax12/curriculum-moderno-en-react"
-            link="https://curriculum-moderno-en-react.vercel.app"
-          /> */}
           {
             proyectosData.filter(proyecto => {
-              if (filterState !== null) {
+              if (filterState !== "todos") {
                 return proyecto.filtros.includes(filterState);
               }
               return true;

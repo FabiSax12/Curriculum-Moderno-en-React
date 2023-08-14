@@ -17,9 +17,10 @@
     list-style: none;
     cursor: pointer;
     transition: all .3s ease;
+    user-select: none;
 }
 
-li.filtro_selected {
+li.selected {
     transform: scale(1.2);
     color: var(--primary);
 }

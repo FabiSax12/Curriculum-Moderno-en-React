@@ -47,7 +47,8 @@
     "repositorio": "https://github.com/FabiSax12/conecta-4",
     "host": "https://conecta-4-two.vercel.app/",
     "filtros": [
-      "mini"
+      "mini",
+      "personal"
     ]
   }
 ]

@@ -5,7 +5,6 @@ import Navegacion from "./Components/Nav/Navegacion";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  console.log("Render")
   return (
     <BrowserRouter>
       <div className="principal">

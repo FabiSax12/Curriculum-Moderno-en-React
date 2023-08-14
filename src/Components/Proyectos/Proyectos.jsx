@@ -8,9 +8,20 @@ import {
   faReact,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
+import proyectosData from "../../data/proyectos.json"
+import { useState } from "react";
 
 const Proyectos = () => {
   const { pageContentRef } = useFirstActivation();
+  const [filterState, setFilterState ] = useState(null)
+
+  const lenguajes = {
+    html: faHtml5,
+    css: faCss3Alt,
+    js: faJsSquare,
+    react: faReact,
+    bootstrap: faBootstrap,
+  }
 
   return (
     <div className={`page_proyectos active`} id="proyectos">
@@ -25,32 +36,30 @@ const Proyectos = () => {
           </ul>
         </nav>
         <div className="proyects_container">
-          <ProyectCard
-            proyectName="Página de Popis"
-            imageSrc={"/proyectos/Popis-React.PNG"}
-            icons={[faHtml5, faCss3Alt, faJsSquare]}
-            repo="https://github.com/FabiSax12/Popis-React"
-            link="https://popis-react.vercel.app"
-          />
-          <ProyectCard
+          {/* <ProyectCard
             proyectName="Portfolio"
             imageSrc="/proyectos/portfolio.PNG"
             icons={[faReact]}
             repo="https://github.com/FabiSax12/curriculum-moderno-en-react"
             link="https://curriculum-moderno-en-react.vercel.app"
-          />
-          <ProyectCard
-            proyectName="Artamy"
-            imageSrc="/proyectos/Artamy.PNG"
-            icons={[faReact]}
-          />
-          <ProyectCard 
-            proyectName="Conecta 4"
-            imageSrc="/proyectos/Conecta-4.PNG"
-            icons={[faReact]}
-            repo="https://github.com/FabiSax12/conecta-4"
-            link="https://conecta-4-two.vercel.app"
-          />
+          /> */}
+          {
+            proyectosData.filter(proyecto => {
+              if (filterState !== null) {
+                return proyecto.filtros.includes(filterState);
+              }
+              return true;
+            }).map((proyecto, index) => (
+              <ProyectCard
+                key={index}
+                proyectName={proyecto.titulo}
+                imageSrc={proyecto.imagen}
+                icons={proyecto.lenguajes.map(leng => lenguajes[leng])}
+                repo={proyecto.repositorio}
+                link={proyecto.host}
+              />
+            ))
+          }
           <div/>
         </div>
       </div>

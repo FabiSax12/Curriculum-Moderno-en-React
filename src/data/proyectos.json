@@ -1,0 +1,53 @@
+[
+  {
+    "titulo": "Página de popis",
+    "imagen": "/proyectos/Popis-React.PNG",
+    "lenguajes": [
+      "html",
+      "css",
+      "js"
+    ],
+    "repositorio": "https://github.com/FabiSax12/Popis-React",
+    "host": "https://popis-react.vercel.app/",
+    "filtros": [
+      "personal"
+    ]
+  },
+  {
+    "titulo": "Artamy",
+    "imagen": "/proyectos/Artamy.PNG",
+    "lenguajes": [
+      "react",
+      "bootstrap"
+    ],
+    "repositorio": "https://github.com/FabiSax12/Art-amy",
+    "host": "https://artamy.vercel.app/",
+    "filtros": [
+      "cliente"
+    ]
+  },
+  {
+    "titulo": "Portfolio",
+    "imagen": "/proyectos/portfolio.PNG",
+    "lenguajes": [
+      "react"
+    ],
+    "repositorio": "https://github.com/FabiSax12/curriculum-moderno-en-react",
+    "host": "https://curriculum-moderno-en-react.vercel.app",
+    "filtros": [
+      "personal"
+    ]
+  },
+  {
+    "titulo": "Conecta 4",
+    "imagen": "/proyectos/Conecta-4.PNG",
+    "lenguajes": [
+      "react"
+    ],
+    "repositorio": "https://github.com/FabiSax12/conecta-4",
+    "host": "https://conecta-4-two.vercel.app/",
+    "filtros": [
+      "mini"
+    ]
+  }
+]

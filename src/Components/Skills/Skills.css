@@ -1,3 +1,18 @@
+:root {
+  --skills-container-width: calc((32px + 20px) * 7);
+  --skills_cantidad: 7;
+}
+
+.skills{
+  margin: 30px auto 0;
+  width: var(--skills-container-width);
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  opacity: 1;
+  animation: skills-show-delay 2s linear;
+}
+
 .skills__container {
   margin-right: 20px;
   display: flex;
@@ -6,8 +21,8 @@
 
 .skills__container.animation {
   width: calc(32px * 12);
-  animation: slide 15s linear infinite;
-  -webkit-animation: slide 15s linear infinite;
+  animation: slide 12s linear infinite;
+  -webkit-animation: slide 12s linear infinite;
 }
 
 .skill {
@@ -17,4 +32,15 @@
 .skill svg{
   color: var(--third);
   zoom: 2;
+}
+
+@keyframes slide {
+  0%{
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+      -webkit-transform: translateX(calc(var(--skills-container-width) * -1));
+      transform: translateX(calc(var(--skills-container-width) * -1));
+  }
 }

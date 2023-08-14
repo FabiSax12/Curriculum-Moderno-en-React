@@ -18,15 +18,6 @@
     color: var(--third);
 }
 
-.skills{
-    margin: 30px auto 0;
-    width: calc(32px * 6 + 20px * 6);
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    opacity: 1;
-    animation: skills-show-delay 2s linear;
-}
 
 /* ----- ----- KEYFRAMES ----- ----- */
 @keyframes home-intro{
@@ -36,17 +27,6 @@
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes slide {
-    0%{
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc((-32px * 6 + -20px * 6)));
-        transform: translateX(calc((-32px * 6 + -20px * 6)));
     }
 }
 

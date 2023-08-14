@@ -7,6 +7,7 @@ import {
   faReact,
   faGitAlt,
   faGithub,
+  faSass
 } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = ({ animation }) => {
@@ -14,6 +15,7 @@ const Skills = ({ animation }) => {
     <div className={`skills__container ${animation ? "animation" : ""}`}>
       <Tecnología icon={faHtml5} />
       <Tecnología icon={faCss3Alt} />
+      <Tecnología icon={faSass} />
       <Tecnología icon={faSquareJs} />
       <Tecnología icon={faReact} />
       <Tecnología icon={faGitAlt} />

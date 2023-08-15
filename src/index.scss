@@ -1,39 +1,6 @@
+@use "variables" as *;
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-// Modulos
-@import "Components/Contact/_contact.scss";
-@import "Components/Curriculum/_curriculum.scss";
-@import "Components/Formulario/_formulario.scss";
-@import "Components/Inicio/_home.scss";
-@import "Components/InputContainer/_inputContainer.scss";
-@import "Components/Load-Spin/_loadSpin.scss";
-@import "Components/Mensaje-de-input/_inputMessage.scss";
-@import "Components/Nav/_navegacion.scss";
-@import "Components/Page-icon/_pageIcon.scss";
-@import "Components/Páginas/_pages.scss";
-@import "Components/Prev-Correo/_previsualizacionCorreo.scss";
-@import "Components/ProyectCard/_proyectCard.scss";
-@import "Components/Proyectos/_proyectos.scss";
-@import "Components/Redes/_redes.scss";
-@import "Components/Sidebar/_sideBar.scss";
-@import "Components/Skills/_skills.scss";
-@import "Components/Sobre Mi/_sobreMi.scss";
-@import "Components/Tecnología/_tecnología.scss";
-@import "Components/Trabajos/_trabajos.scss";
-@import "animaciones";
-@import "mediaQueries";
-
-$--primary: #1ea9e5;
-$--secondary: #fff;
-$--third: #808080af;
-$--clr-error: #e03030;
-
-:root {
-  --primary: #1ea9e5;
-  --secondary: #fff;
-  --third: #808080af;
-  --clr-error: #e03030;
-}
 
 * {
   margin: 0;
@@ -65,11 +32,11 @@ body {
 
 .title {
   padding-bottom: 10px;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid $primary;
 }
 
 .subtitle {
-  color: var(--primary);
+  color: $primary;
   font-size: 22px;
   font-weight: bold;
 }
@@ -78,7 +45,7 @@ body {
   width: 100%;
   height: 0;
   overflow-y: scroll;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid $primary;
   transition: height 2s cubic-bezier(0.23, 0.76, 0.58, 1), border-bottom 2.2s ease-out;
 
   &::-webkit-scrollbar {
@@ -87,7 +54,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
+    background-color: $primary;
     opacity: 1;
     border-radius: 10px;
   }
@@ -97,3 +64,26 @@ body {
   height: 500px;
   border-bottom-color: #fff;
 }
+
+@import "app";
+@import "Components/Contact/_contact.scss";
+@import "Components/Curriculum/_curriculum.scss";
+@import "Components/Formulario/_formulario.scss";
+@import "Components/Inicio/_home.scss";
+@import "Components/InputContainer/_inputContainer.scss";
+@import "Components/Load-Spin/_loadSpin.scss";
+@import "Components/Mensaje-de-input/_inputMessage.scss";
+@import "Components/Nav/_navegacion.scss";
+@import "Components/Page-icon/_pageIcon.scss";
+@import "Components/Páginas/_pages.scss";
+@import "Components/Prev-Correo/_previsualizacionCorreo.scss";
+@import "Components/ProyectCard/_proyectCard.scss";
+@import "Components/Proyectos/_proyectos.scss";
+@import "Components/Redes/_redes.scss";
+@import "Components/Sidebar/_sideBar.scss";
+@import "Components/Skills/_skills.scss";
+@import "Components/Sobre Mi/_sobreMi.scss";
+@import "Components/Tecnología/_tecnología.scss";
+@import "Components/Trabajos/_trabajos.scss";
+@import "animaciones";
+@import "mediaQueries";

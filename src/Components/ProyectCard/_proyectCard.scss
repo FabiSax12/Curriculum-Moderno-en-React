@@ -1,6 +1,8 @@
+@use "../../variables" as *;
+
 .proyect-card {
   width: 240px;
-  box-shadow: 0 0 20px var(--third);
+  box-shadow: 0 0 20px $third;
   border-radius: 3px;
   overflow: hidden;
 
@@ -15,7 +17,7 @@
 
   &_name {
     margin-bottom: 5px;
-    color: var(--primary);
+    color: $primary;
     font-weight: bold;
   }
 

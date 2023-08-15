@@ -1,10 +1,12 @@
+@use "../../variables" as *;
+
 .previsualización_container {
   padding: 5px;
   max-width: 400px;
   min-height: 200px;
   height: max-content;
   display: inline;
-  border: 1px dashed var(--third);
+  border: 1px dashed $third;
   font-size: 20px;
   line-height: 35px;
   border-radius: 5px;
@@ -28,7 +30,7 @@
 
   .email_from {
     margin-top: 20px;
-    border-top: 2px dashed var(--third);
+    border-top: 2px dashed $third;
     font-size: .6em;
   }
 }

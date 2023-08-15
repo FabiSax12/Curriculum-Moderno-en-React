@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 .trabajo {
   display: grid;
   grid-template-columns: 160px 20px 1fr;
@@ -6,11 +8,11 @@
 
   .content_lugar-fecha {
     text-align: end;
-    color: var(--primary);
+    color: $primary;
 
     p {
       font-size: .7em;
-      color: var(--third);
+      color: $third;
     }
   }
 
@@ -21,7 +23,7 @@
     justify-content: center;
     text-align: center;
     font-size: small;
-    color: var(--primary);
+    color: $primary;
 
     .icon {
       margin: 3px auto;
@@ -31,7 +33,7 @@
       width: 1px;
       height: 100%;
       margin: 0 auto;
-      background-color: var(--third);
+      background-color: $third;
     }
   }
 }

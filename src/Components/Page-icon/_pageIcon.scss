@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 /* Generales */
 .navegacion_btn {
   width: 50px;
@@ -8,7 +10,7 @@
   position: relative;
 
   &_icon {
-    color: var(--third);
+    color: $third;
     transform: scale(1.6);
   }
 
@@ -23,7 +25,7 @@
     width: max-content;
     height: 15px;
     padding: 5px;
-    background-color: var(--primary);
+    background-color: $primary;
     color: #fff;
     border-radius: 5px;
     text-align: center;

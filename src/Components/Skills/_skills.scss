@@ -3,7 +3,7 @@
   --skills_cantidad: 7;
 }
 
-.skills{
+.skills {
   margin: 30px auto 0;
   width: var(--skills-container-width);
   height: auto;
@@ -29,18 +29,19 @@
   width: 32px;
 }
 
-.skill svg{
+.skill svg {
   color: var(--third);
   zoom: 2;
 }
 
 @keyframes slide {
-  0%{
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
+
   100% {
-      -webkit-transform: translateX(calc(var(--skills-container-width) * -1));
-      transform: translateX(calc(var(--skills-container-width) * -1));
+    -webkit-transform: translateX(calc(var(--skills-container-width) * -1));
+    transform: translateX(calc(var(--skills-container-width) * -1));
   }
 }

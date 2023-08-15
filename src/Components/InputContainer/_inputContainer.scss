@@ -29,10 +29,12 @@ label.label-focused {
   outline: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 textarea.form_input {
   resize: vertical;
 }
-.form_input:focus{
+
+.form_input:focus {
   border-color: var(--primary);
 }
 
@@ -46,7 +48,8 @@ textarea.form_input {
   font-size: 16px;
   transition: transform .3s ease;
 }
-.form_button:hover{
+
+.form_button:hover {
   cursor: pointer;
   transform: translateY(-5px);
 }

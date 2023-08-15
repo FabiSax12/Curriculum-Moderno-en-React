@@ -1,0 +1,35 @@
+@keyframes page-intro {
+  0% {
+    opacity: 0;
+    margin-top: 400px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes home-intro {
+  0% {
+    opacity: 0;
+    margin-top: 400px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes skills-show-delay {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

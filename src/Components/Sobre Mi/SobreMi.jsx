@@ -1,4 +1,3 @@
-import "./SobreMi.css";
 import { useFirstActivation } from "../../hooks/useFirstActivation";
 
 const SobreMi = () => {

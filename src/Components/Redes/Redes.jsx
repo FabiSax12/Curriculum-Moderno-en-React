@@ -1,4 +1,3 @@
-import "./Redes.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Redes = (props) => {

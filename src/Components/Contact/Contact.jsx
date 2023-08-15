@@ -1,4 +1,3 @@
-import "./Contact.css";
 import { useFirstActivation } from "../../hooks/useFirstActivation";
 import FormularioEmail from "../Formulario/FormularioEmail";
 

@@ -1,5 +1,3 @@
-import React from "react";
-import "./ProyectCard.css";
 import Tecnología from "../Tecnología/Tecnología";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";

@@ -1,5 +1,3 @@
-import "./PrevisualizaciónCorreo.css";
-
 const PrevisualizaciónCorreo = ({ valores }) => {
   return (
     <div className="previsualización_container">

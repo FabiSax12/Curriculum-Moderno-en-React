@@ -14,12 +14,15 @@
 .email_title {
   font-size: 0.9em;
 }
+
 .email_to {
   font-size: 0.7em;
 }
+
 .email_asunto {
   font-size: 0.8em;
 }
+
 .email_message {
   font-size: 0.6em;
   line-height: normal;
@@ -32,7 +35,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .previsualización_container{
+  .previsualización_container {
     display: none;
   }
 }

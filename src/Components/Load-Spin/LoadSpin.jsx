@@ -1,5 +1,3 @@
-import "./LoadSpin.css";
-
 const LoadSpin = ({ state }) => {
   return (
     <div className={`sk-circle ${state}`}>

@@ -1,4 +1,3 @@
-import "./Sidebar.css";
 import Redes from "../Redes/Redes";
 import {
   faInstagram,

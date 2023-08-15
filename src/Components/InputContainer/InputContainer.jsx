@@ -1,5 +1,4 @@
 import InputMessage from "../Mensaje-de-input/InputMessage";
-import "./InputContaienr.css";
 import { useState } from "react";
 
 function InputContainer({

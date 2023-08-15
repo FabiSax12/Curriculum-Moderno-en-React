@@ -3,14 +3,9 @@ form {
   flex-direction: column;
   gap: 20px;
 }
+
 .form_grid {
   padding: 30px 10px;
   display: grid;
   grid-template-columns: 320px 1fr;
-}
-
-@media screen and (max-width: 900px) {
-  .form_grid{
-    display: block;
-  }
 }

@@ -1,4 +1,3 @@
-import "./Home.css";
 import Skills from "../Skills/Skills";
 
 const Home = () => {

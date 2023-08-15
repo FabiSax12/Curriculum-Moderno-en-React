@@ -1,0 +1,39 @@
+.page_proyectos {
+  width: 100%;
+  height: max-content;
+  animation: page-intro .4s ease forwards;
+}
+
+.filtros_proyectos {
+  margin-top: 20px;
+  padding: 0 0 5px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  border-bottom: 2px solid var(--third);
+}
+
+.filtros_proyectos li {
+  list-style: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  user-select: none;
+}
+
+li.selected {
+  transform: scale(1.2);
+  color: var(--primary);
+}
+
+.proyects_container {
+  margin: 20px auto;
+  max-width: 95%;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px; */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
+}

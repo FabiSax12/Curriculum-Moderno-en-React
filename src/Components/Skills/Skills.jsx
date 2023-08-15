@@ -1,4 +1,3 @@
-import "./Skills.css";
 import Tecnología from "../Tecnología/Tecnología";
 import {
   faHtml5,
@@ -7,7 +6,7 @@ import {
   faReact,
   faGitAlt,
   faGithub,
-  faSass
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Skills = ({ animation }) => {

@@ -1,27 +1,27 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 // Modulos
+@import "Components/Contact/_contact.scss";
+@import "Components/Curriculum/_curriculum.scss";
+@import "Components/Formulario/_formulario.scss";
+@import "Components/Inicio/_home.scss";
+@import "Components/InputContainer/_inputContainer.scss";
+@import "Components/Load-Spin/_loadSpin.scss";
+@import "Components/Mensaje-de-input/_inputMessage.scss";
+@import "Components/Nav/_navegacion.scss";
+@import "Components/Page-icon/_pageIcon.scss";
+@import "Components/Páginas/_pages.scss";
+@import "Components/Prev-Correo/_previsualizacionCorreo.scss";
+@import "Components/ProyectCard/_proyectCard.scss";
+@import "Components/Proyectos/_proyectos.scss";
+@import "Components/Redes/_redes.scss";
+@import "Components/Sidebar/_sideBar.scss";
+@import "Components/Skills/_skills.scss";
+@import "Components/Sobre Mi/_sobreMi.scss";
+@import "Components/Tecnología/_tecnología.scss";
+@import "Components/Trabajos/_trabajos.scss";
 @import "animaciones";
 @import "mediaQueries";
-@import url("src/Components/Contact/_contact.scss");
-@import url("src/Components/Curriculum/_curriculum.scss");
-@import url("src/Components/Formulario/_formulario.scss");
-@import url("src/Components/Inicio/_home.scss");
-@import url("src/Components/InputContainer/_inputContainer.scss");
-@import url("src/Components/Load-Spin/_loadSpin.scss");
-@import url("src/Components/Mensaje-de-input/_inputMessage.scss");
-@import url("src/Components/Nav/_navegacion.scss");
-@import url("src/Components/Page-icon/_pageIcon.scss");
-@import url("src/Components/Páginas/_pages.scss");
-@import url("src/Components/Prev-Correo/_previsualizacionCorreo.scss");
-@import url("src/Components/ProyectCard/_proyectCard.scss");
-@import url("src/Components/Proyectos/_proyectos.scss");
-@import url("src/Components/Redes/_redes.scss");
-@import url("src/Components/Sidebar/_sideBar.scss");
-@import url("src/Components/Skills/_skills.scss");
-@import url("src/Components/Sobre Mi/_sobreMi.scss");
-@import url("src/Components/Tecnología/_tecnología.scss");
-@import url("src/Components/Trabajos/_trabajos.scss");
 
 $--primary: #1ea9e5;
 $--secondary: #fff;

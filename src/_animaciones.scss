@@ -1,4 +1,6 @@
-@keyframes page-intro {
+@use "./Components/Skills/skills" as skills;
+
+@keyframes home-intro {
   0% {
     opacity: 0;
     margin-top: 400px;
@@ -9,7 +11,7 @@
   }
 }
 
-@keyframes home-intro {
+@keyframes page-intro {
   0% {
     opacity: 0;
     margin-top: 400px;
@@ -31,5 +33,17 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(skills.calcularWidth() * -1);
+    transform: translateX(skills.calcularWidth() * -1);
   }
 }

@@ -1,34 +1,35 @@
 .sobremi {
   width: 100%;
   animation: page-intro .4s ease forwards;
-}
 
-.sobremi__texto {
-  margin-top: 20px;
-  line-height: 25px;
-  font-size: 1.1em;
-}
+  &__texto {
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 1.1em;
+  }
 
-.hard-soft_skills {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1.5fr 1fr;
-}
+  .hard-soft_skills {
+    display: grid;
+    margin-top: 30px;
+    gap: 30px;
+    grid-template-columns: 1.5fr 1fr;
 
-.techStack {
-  margin-top: 20px;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+    .techStack {
+      margin-top: 20px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
 
-.techStack img {
-  width: 40px;
-}
+      img {
+        width: 40px;
+      }
+    }
 
-.sobremi__aptitudes_lista {
-  margin: 5px 10px 10px 0;
-  font-size: 1em;
-  list-style: disc;
-  list-style-type: none;
+    .sobremi__aptitudes_lista {
+      margin: 5px 10px 10px 0;
+      font-size: 1em;
+      list-style: disc;
+      list-style-type: none;
+    }
+  }
 }

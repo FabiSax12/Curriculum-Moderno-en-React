@@ -7,64 +7,64 @@
   justify-content: flex-start;
   text-align: center;
   position: relative;
-}
 
-.sidebar__img {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-}
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
 
-.sidebar__img img {
-  width: 180px;
-  position: absolute;
-  top: -15px;
-  left: -12px;
-}
+    img {
+      width: 180px;
+      position: absolute;
+      top: -15px;
+      left: -12px;
+    }
+  }
 
-.sidebar__texto {
-  margin-top: 20px;
-  color: #fff;
-  font-weight: 100;
-  font-size: 18px;
-  text-align: center;
-  line-height: 3em;
-}
+  &__texto {
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    line-height: 3em;
 
-.sidebar__texto h4 {
-  font-weight: 100;
-  font-size: 1.2em;
-}
+    h4 {
+      font-weight: 100;
+      font-size: 1.2em;
+    }
+  }
 
-.sidebar_cv {
-  display: block;
-  margin: 40px;
-  width: 150px;
-  height: 50px;
-  border: 1px solid var(--secondary);
-  border-radius: 50px;
-  background-color: var(--primary);
-  color: var(--secondary);
-  font-size: .9em;
-  text-decoration: none;
-  cursor: pointer;
-  transition: .5s ease all;
-}
+  &__texto &_cv {
+    display: block;
+    margin: 40px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--secondary);
+    border-radius: 50px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: .9em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s ease all;
 
-.sidebar_cv:hover {
-  transform: scale(1.03);
-  background-color: var(--secondary);
-  color: var(--primary);
-}
+    &:hover {
+      transform: scale(1.03);
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+  }
 
-.sidebar__copyrigth {
-  margin: auto;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  font-size: .6em;
+  &__copyrigth {
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    font-size: .6em;
+  }
 }

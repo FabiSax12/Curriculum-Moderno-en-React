@@ -10,9 +10,8 @@ const SobreMi = () => {
         <p className="sobremi__texto">
           Joven apasionado por la ingeniería y la resolución de problemas,
           adicto al aprendizaje y fanático de los verdaderos retos.
-          <br />
-          Desarrollador Front-End en progreso...
         </p>
+        <p>Desarrollador Front-End en progreso...</p>
         <section className="hard-soft_skills">
           <div>
             <h2 className="subtitle">Tech Stack / Hard Skills</h2>

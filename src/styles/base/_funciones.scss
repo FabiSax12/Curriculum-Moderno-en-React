@@ -1,3 +1,9 @@
-@function calcularWidth() {
-  @return ($widthCasilla + $gap) * $cantidad
+@function calcularWidth($isMobile: "false") {
+  @if $isMobile =="true" {
+    @return ($widthCasillaMobile + $gap) * $cantidad;
+  }
+
+  @else {
+    @return ($widthCasilla + $gap) * $cantidad
+  }
 }

@@ -45,3 +45,15 @@
     transform: translateX(calcularWidth() * -1);
   }
 }
+
+@keyframes slideMobile {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calcularWidth("true") * -1);
+    transform: translateX(calcularWidth("true") * -1);
+  }
+}

@@ -30,10 +30,11 @@
     "titulo": "Portfolio",
     "imagen": "/proyectos/portfolio.PNG",
     "lenguajes": [
-      "react"
+      "react",
+      "sass"
     ],
     "repositorio": "https://github.com/FabiSax12/curriculum-moderno-en-react",
-    "host": "https://curriculum-moderno-en-react.vercel.app",
+    "host": "https://portfolio-fabisax.vercel.app",
     "filtros": [
       "personal"
     ]

@@ -1,0 +1,37 @@
+.page_proyectos {
+  width: 100%;
+  height: max-content;
+  animation: page-intro .4s ease forwards;
+
+  .content {
+    .filtros_proyectos {
+      margin-top: 20px;
+      padding: 0 0 5px 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      border-bottom: 2px solid $third;
+
+      li {
+        list-style: none;
+        cursor: pointer;
+        transition: all .3s ease;
+        user-select: none;
+
+        &.selected {
+          transform: scale(1.2);
+          color: $primary;
+        }
+      }
+    }
+
+    .proyects_container {
+      margin: 20px auto;
+      max-width: 95%;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      justify-items: center;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+$cantidad: 7;
+$widthCasilla: 32px;
+$gap: 20px;
+
+@function calcularWidth() {
+  @return ($widthCasilla + $gap) * $cantidad
+}

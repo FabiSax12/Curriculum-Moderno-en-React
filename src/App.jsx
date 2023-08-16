@@ -1,7 +1,6 @@
-import "./App.css";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import Paginas from "./Components/Páginas/Páginas";
-import Navegacion from "./Components/Nav/Navegacion";
+import Sidebar from "./Components/Sidebar";
+import Paginas from "./Components/Páginas";
+import Navegacion from "./Components/Navegacion";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {

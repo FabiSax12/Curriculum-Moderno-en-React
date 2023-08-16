@@ -1,0 +1,123 @@
+@media screen and (max-width: 900px) {
+  .form_grid {
+    display: block;
+  }
+
+  .previsualización_container {
+    display: none;
+  }
+}
+
+// Mobile
+@media screen and (max-width: 576px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #root {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .principal {
+    margin: 0;
+    min-height: 94vh;
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+
+    .sidebar {
+      display: none;
+    }
+
+    .pages {
+      padding: 0;
+      height: 100%;
+
+      // About
+      .sobremi {
+        padding: 20px 20px 0;
+        height: 100%;
+
+        .content {
+          height: 100%;
+          text-align: center;
+          line-height: 1.5em;
+
+          .hard-soft_skills {
+            grid-template-columns: 1fr;
+
+            .subtitle {
+              text-align: center;
+            }
+
+            .techStack {
+              justify-content: center;
+            }
+
+            .sobremi__aptitudes_lista {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      // Curriculum
+      .page_formación {
+        padding: 20px 20px 0;
+        height: 100%;
+
+        .content {
+          height: 100%;
+
+          .subtitle {
+            text-align: center;
+          }
+
+          .experiencia_laboral {
+
+            .trabajo {
+              grid-template-columns: 1fr;
+
+              .content_lugar-fecha {
+                text-align: start;
+              }
+
+              .content_icon {
+                display: none;
+              }
+
+              .content_info {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      // Proyectos
+
+      // Contacto
+    }
+  }
+
+  .navegacion {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 6vh;
+    border-radius: 0;
+    box-shadow: 0 10px 30px $third;
+    position: fixed;
+    bottom: 0;
+    background-color: $secondary;
+  }
+}

@@ -8,6 +8,7 @@ import {
   faGithub,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
+import { SiJquery } from "react-icons/si";
 
 const Skills = ({ animation }) => {
   return (
@@ -16,6 +17,9 @@ const Skills = ({ animation }) => {
       <Tecnología icon={faCss3Alt} />
       <Tecnología icon={faSass} />
       <Tecnología icon={faSquareJs} />
+      <div className="skill">
+        <SiJquery />
+      </div>
       <Tecnología icon={faReact} />
       <Tecnología icon={faGitAlt} />
       <Tecnología icon={faGithub} />

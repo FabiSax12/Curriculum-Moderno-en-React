@@ -20,6 +20,7 @@ const SobreMi = () => {
               <img src="/tecnologías/css.png" alt="CSS Logo" />
               <img src="/tecnologías/sass.png" alt="SASS Logo" />
               <img src="/tecnologías/js.png" alt="JavaScript Logo" />
+              <img src="/tecnologías/jquery.png" alt="JQuery Logo" />
               <img src="/tecnologías/react.png" alt="React Logo" />
               <img src="/tecnologías/git.webp" alt="Git Logo" />
               <img src="/tecnologías/github.png" alt="Github Logo" />

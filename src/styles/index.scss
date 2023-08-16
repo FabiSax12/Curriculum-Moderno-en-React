@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 // Base
+
 @import "./base/settings";
 @import "./base/reset";
 @import "./base/funciones";
 @import "./base/animaciones";
-@import "./base/mediaQueries";
+
 
 // Componentes
 @import "../app";
@@ -101,3 +102,5 @@ body {
   height: 500px;
   border-bottom-color: #fff;
 }
+
+@import "./base/mediaQueries";

@@ -4,7 +4,7 @@ const SobreMi = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
-    <div className={`sobremi active`} id="sobreMi">
+    <div className="sobremi" id="sobreMi">
       <h2 className="title">Sobre Mi</h2>
       <div className="content" ref={pageContentRef}>
         <p className="sobremi__texto">

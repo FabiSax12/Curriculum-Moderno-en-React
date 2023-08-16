@@ -5,7 +5,7 @@ const Formación = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
-    <div className={`page_formación active`} id="formación">
+    <div className="page_formación" id="formación">
       <h2 className="title">Currículum</h2>
       <div className="content" ref={pageContentRef}>
         <section className="experiencia_laboral">

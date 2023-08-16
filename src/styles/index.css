@@ -42,97 +42,6 @@
     transform: translateX(-364px);
   }
 }
-@media screen and (max-width: 900px) {
-  .form_grid {
-    display: block;
-  }
-  .previsualización_container {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
-  #root {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .principal {
-    margin: 0;
-    min-height: 94vh;
-    display: block;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  .principal .sidebar {
-    display: none;
-  }
-  .principal .pages {
-    padding: 0;
-    height: 100%;
-  }
-  .principal .pages .sobremi {
-    padding: 20px 20px 0;
-    height: 100%;
-  }
-  .principal .pages .sobremi .content {
-    height: 100%;
-    text-align: center;
-    line-height: 1.5em;
-  }
-  .principal .pages .sobremi .content .hard-soft_skills {
-    grid-template-columns: 1fr;
-  }
-  .principal .pages .sobremi .content .hard-soft_skills .subtitle {
-    text-align: center;
-  }
-  .principal .pages .sobremi .content .hard-soft_skills .techStack {
-    justify-content: center;
-  }
-  .principal .pages .sobremi .content .hard-soft_skills .sobremi__aptitudes_lista {
-    text-align: center;
-  }
-  .principal .pages .page_formación {
-    padding: 20px 20px 0;
-    height: 100%;
-  }
-  .principal .pages .page_formación .content {
-    height: 100%;
-  }
-  .principal .pages .page_formación .content .subtitle {
-    text-align: center;
-  }
-  .principal .pages .page_formación .content .experiencia_laboral .trabajo {
-    grid-template-columns: 1fr;
-  }
-  .principal .pages .page_formación .content .experiencia_laboral .trabajo .content_lugar-fecha {
-    text-align: start;
-  }
-  .principal .pages .page_formación .content .experiencia_laboral .trabajo .content_icon {
-    display: none;
-  }
-  .principal .pages .page_formación .content .experiencia_laboral .trabajo .content_info {
-    margin-top: 10px;
-  }
-  .navegacion {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 6vh;
-    border-radius: 0;
-    box-shadow: 0 10px 30px rgba(128, 128, 128, 0.6862745098);
-    position: fixed;
-    bottom: 0;
-    background-color: #fff;
-  }
-}
 .principal {
   width: 100%;
   height: 600px;
@@ -316,33 +225,6 @@
   color: rgba(128, 128, 128, 0.6862745098);
 }
 
-@media screen and (max-width: 576px) {
-  .page_home {
-    width: 100vw;
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .page_home_title {
-    margin: 0 auto;
-    font-size: 14px;
-  }
-  .page_home .skills {
-    margin: 0;
-    width: 252px;
-  }
-  .page_home .skills__container.animation {
-    width: 224px;
-  }
-  .page_home .skills__container .skill {
-    width: 16px;
-  }
-  .page_home .skills__container .skill svg {
-    zoom: 1.5;
-  }
-}
 .skills {
   margin: 30px auto 0;
   width: 364px;
@@ -812,4 +694,123 @@ body {
 .show {
   height: 500px;
   border-bottom-color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .form_grid {
+    display: block;
+  }
+  .previsualización_container {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+  #root {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .principal {
+    margin: 0;
+    min-height: 94vh;
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .principal .sidebar {
+    display: none;
+  }
+  .principal .pages {
+    padding: 0;
+    height: 100%;
+  }
+  .principal .pages .sobremi {
+    padding: 20px 20px 0;
+    height: 100%;
+  }
+  .principal .pages .sobremi .content {
+    height: 100%;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .principal .pages .sobremi .content .hard-soft_skills {
+    grid-template-columns: 1fr;
+  }
+  .principal .pages .sobremi .content .hard-soft_skills .subtitle {
+    text-align: center;
+  }
+  .principal .pages .sobremi .content .hard-soft_skills .techStack {
+    justify-content: center;
+  }
+  .principal .pages .sobremi .content .hard-soft_skills .sobremi__aptitudes_lista {
+    text-align: center;
+  }
+  .principal .pages .page_formación {
+    padding: 20px 20px 0;
+    height: 100%;
+  }
+  .principal .pages .page_formación .content {
+    height: 100%;
+  }
+  .principal .pages .page_formación .content .subtitle {
+    text-align: center;
+  }
+  .principal .pages .page_formación .content .experiencia_laboral .trabajo {
+    grid-template-columns: 1fr;
+  }
+  .principal .pages .page_formación .content .experiencia_laboral .trabajo .content_lugar-fecha {
+    text-align: start;
+  }
+  .principal .pages .page_formación .content .experiencia_laboral .trabajo .content_icon {
+    display: none;
+  }
+  .principal .pages .page_formación .content .experiencia_laboral .trabajo .content_info {
+    margin-top: 10px;
+  }
+  .navegacion {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 6vh;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(128, 128, 128, 0.6862745098);
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 576px) {
+  .page_home {
+    width: 100vw;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page_home_title {
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .page_home .skills {
+    margin: 0;
+    width: 252px;
+  }
+  .page_home .skills__container.animation {
+    width: 224px;
+  }
+  .page_home .skills__container .skill {
+    width: 16px;
+  }
+  .page_home .skills__container .skill svg {
+    zoom: 1.5;
+  }
 }/*# sourceMappingURL=index.css.map */

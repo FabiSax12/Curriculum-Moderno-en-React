@@ -31,7 +31,7 @@ const Proyectos = () => {
   };
 
   return (
-    <div className={`page_proyectos active`} id="proyectos">
+    <div className="page_proyectos" id="proyectos">
       <h2 className="title">Proyectos</h2>
       <div className="content" ref={pageContentRef}>
         <nav>

@@ -5,7 +5,7 @@ const Contact = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
-    <div className={`page_contacto active`} id="contact">
+    <div className="page_contacto" id="contact">
       <h2 className="title">Contacto</h2>
       <div className="content" ref={pageContentRef}>
         <FormularioEmail />

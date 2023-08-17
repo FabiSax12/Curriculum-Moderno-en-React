@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Redes = (props) => {
+const SocialNetworks = (props) => {
   return (
     <a className="redes__link" href={props.link} target="_blank">
       <FontAwesomeIcon icon={props.icon} className="redes__icon" />
@@ -8,4 +8,4 @@ const Redes = (props) => {
   );
 };
 
-export default Redes;
+export default SocialNetworks;

@@ -1,16 +1,16 @@
 import Sidebar from "./Components/Sidebar";
-import Paginas from "./Components/Páginas";
-import Navegacion from "./Components/Navegacion";
+import Pages from "./Components/Pages";
+import Navigation from "./Components/Navigation";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="principal">
+      <section className="principal">
         <Sidebar />
-        <Paginas />
-      </div>
-      <Navegacion />
+        <Pages />
+      </section>
+      <Navigation />
     </BrowserRouter>
   );
 }

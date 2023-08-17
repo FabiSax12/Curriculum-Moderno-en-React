@@ -1,4 +1,4 @@
-const PrevisualizaciónCorreo = ({ valores }) => {
+const EmailPreview = ({ valores }) => {
   return (
     <div className="previsualización_container">
       <h4 className="email_title">Nuevo mensaje de {valores.nombre}</h4>
@@ -12,4 +12,4 @@ const PrevisualizaciónCorreo = ({ valores }) => {
   );
 };
 
-export default PrevisualizaciónCorreo;
+export default EmailPreview;

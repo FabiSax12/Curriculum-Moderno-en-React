@@ -1,5 +1,5 @@
 import { useFirstActivation } from "../hooks/useFirstActivation";
-import FormularioEmail from "./FormularioEmail";
+import EmailForm from "./EmailForm";
 
 const Contact = () => {
   const { pageContentRef } = useFirstActivation();
@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="page_contacto" id="contact">
       <h2 className="title">Contacto</h2>
       <div className="content" ref={pageContentRef}>
-        <FormularioEmail />
+        <EmailForm />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import Redes from "./Redes";
+import SocialNetworks from "./SocialNetworks";
 import {
   faInstagram,
   faLinkedin,
@@ -15,15 +15,15 @@ const Sidebar = () => {
         <h3>Fabián Vargas</h3>
         <h4>Estudiante</h4>
         <div className="sidebar__links-redes">
-          <Redes
+          <SocialNetworks
             link="https://www.instagram.com/vargas_fabian04/"
             icon={faInstagram}
           />
-          <Redes
+          <SocialNetworks
             link="https://www.linkedin.com/in/fabi%C3%A1n-vargas-araya-796ab3275/"
             icon={faLinkedin}
           />
-          <Redes link="https://github.com/FabiSax12" icon={faGithub} />
+          <SocialNetworks link="https://github.com/FabiSax12" icon={faGithub} />
         </div>
         <a
           className="sidebar_cv"

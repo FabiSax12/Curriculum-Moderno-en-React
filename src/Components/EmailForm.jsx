@@ -3,9 +3,9 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import LoadSpin from "./LoadSpin";
 import InputContainer from "./InputContainer";
-import PrevisualizaciónCorreo from "./PrevisualizaciónCorreo";
+import EmailPreview from "./EmailPreview";
 
-const FormularioEmail = () => {
+const EmailForm = () => {
   const [isSending, setIsSending] = useState(false);
   const form = useRef();
   const inputs = ["nombre", "email", "asunto", "mensaje"];
@@ -67,9 +67,9 @@ const FormularioEmail = () => {
         </button>
         <LoadSpin state={isSending ? "active" : "inactive"} />
       </form>
-      <PrevisualizaciónCorreo valores={watch()} />
+      <EmailPreview valores={watch()} />
     </div>
   );
 };
 
-export default FormularioEmail;
+export default EmailForm;

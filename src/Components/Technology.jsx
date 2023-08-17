@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Tecnología = ({ icon }) => {
+const Technology = ({ icon }) => {
   return (
     <div className="skill">
       <FontAwesomeIcon icon={icon} />
@@ -8,4 +8,4 @@ const Tecnología = ({ icon }) => {
   );
 };
 
-export default Tecnología;
+export default Technology;

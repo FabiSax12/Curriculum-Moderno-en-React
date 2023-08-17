@@ -1,7 +1,7 @@
-import Trabajos from "./Trabajos";
+import Job from "./Job";
 import { useFirstActivation } from "../hooks/useFirstActivation";
 
-const Formación = () => {
+const Resume = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
@@ -10,7 +10,7 @@ const Formación = () => {
       <div className="content" ref={pageContentRef}>
         <section className="experiencia_laboral">
           <h3 className="subtitle">Experiencia Laboral</h3>
-          <Trabajos
+          <Job
             lugar="Almacen AMP"
             inicio="03 - 11 - 2022"
             final="15 - 12 - 2022"
@@ -19,7 +19,7 @@ const Formación = () => {
             materiales eléctricos, herramientas e inventarios. Alistar, empacar y
             despachar pedidos de los clientes."
           />
-          <Trabajos
+          <Job
             lugar="Electro Beyco"
             inicio="02 - 10 - 2023"
             final="01 - 12 - 2023"
@@ -29,14 +29,14 @@ const Formación = () => {
         </section>
         <section className="formacion_academica">
           <h3 className="subtitle">Formación Académica</h3>
-          <Trabajos
+          <Job
             lugar="CTP Nataniel Arias Murillo"
             inicio="13 dic 2023"
             final=""
             puesto="Bachillerato y Técnico Medio en Electrotécnia"
             descripcion=""
           />
-          <Trabajos
+          <Job
             lugar="Escuela Los Chiles de AZ"
             inicio="12 dic 2017"
             final=""
@@ -49,4 +49,4 @@ const Formación = () => {
   );
 };
 
-export default Formación;
+export default Resume;

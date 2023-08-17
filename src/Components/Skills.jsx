@@ -1,4 +1,4 @@
-import Tecnología from "./Tecnología";
+import Technology from "./Technology";
 import {
   faHtml5,
   faCss3Alt,
@@ -13,16 +13,16 @@ import { SiJquery } from "react-icons/si";
 const Skills = ({ animation }) => {
   return (
     <div className={`skills__container ${animation ? "animation" : ""}`}>
-      <Tecnología icon={faHtml5} />
-      <Tecnología icon={faCss3Alt} />
-      <Tecnología icon={faSass} />
-      <Tecnología icon={faSquareJs} />
+      <Technology icon={faHtml5} />
+      <Technology icon={faCss3Alt} />
+      <Technology icon={faSass} />
+      <Technology icon={faSquareJs} />
       <div className="skill">
         <SiJquery />
       </div>
-      <Tecnología icon={faReact} />
-      <Tecnología icon={faGitAlt} />
-      <Tecnología icon={faGithub} />
+      <Technology icon={faReact} />
+      <Technology icon={faGitAlt} />
+      <Technology icon={faGithub} />
     </div>
   );
 };

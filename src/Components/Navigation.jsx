@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Navegacion = () => {
+const Navigation = () => {
   return (
     <div className="navegacion">
       <Link to="/home">
@@ -30,4 +30,4 @@ const Navegacion = () => {
   );
 };
 
-export default Navegacion;
+export default Navigation;

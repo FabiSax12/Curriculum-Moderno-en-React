@@ -1,6 +1,6 @@
 import { useFirstActivation } from "../hooks/useFirstActivation";
 
-const SobreMi = () => {
+const AboutMe = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
@@ -43,4 +43,4 @@ const SobreMi = () => {
   );
 };
 
-export default SobreMi;
+export default AboutMe;

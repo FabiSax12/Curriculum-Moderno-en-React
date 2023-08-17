@@ -2,12 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 // Base
-
 @import "./base/settings";
 @import "./base/reset";
 @import "./base/funciones";
 @import "./base/animaciones";
-
 
 // Componentes
 @import "../app";
@@ -15,35 +13,35 @@
 
 // Sidebar
 @import "./components/sidebar";
-@import "./components/redes";
+@import "./components/socialNetwork";
 
 // Navegación
-@import "./components/navegacion";
+@import "./components/navigation";
 @import "./components/pageIcon";
 
 // Home
 @import "./components/home";
 @import "./components/skills";
-@import "./components/tecnología";
+@import "./components/technology";
 
 // Sobre Mi
-@import "./components/sobreMi";
+@import "./components/aboutMe";
 
 // Curriculum
-@import "./components/curriculum";
-@import "./components/trabajos";
+@import "./components/resume";
+@import "./components/Job";
 
 // Proyectos
-@import "./components/proyectos";
+@import "./components/proyects";
 @import "./components/proyectCard";
 
 // Contacto
 @import "./components/contact";
-@import "./components/formulario";
+@import "./components/emailForm";
 @import "./components/inputContainer";
 @import "./components/inputMessage";
 @import "./components/loadSpin";
-@import "./components/previsualizacionCorreo";
+@import "./components/emailPreview";
 
 body {
   display: flex;

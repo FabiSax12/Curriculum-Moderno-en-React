@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import proyectosData from "../data/proyectos.json";
 
-const Proyectos = () => {
+const Proyects = () => {
   const { pageContentRef } = useFirstActivation();
   const [filterState, setFilterState] = useState("todos");
 
@@ -91,4 +91,4 @@ const Proyectos = () => {
   );
 };
 
-export default Proyectos;
+export default Proyects;

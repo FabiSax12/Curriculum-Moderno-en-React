@@ -4,21 +4,21 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const ProyectCard = ({ proyectName, imageSrc, icons, repo, link }) => {
   return (
-    <div className="proyect-card">
+    <div className="proyectCard">
       <img src={imageSrc} alt={`${proyectName} Image`} />
-      <div className="proyect-card_body">
-        <h4 className="proyect-card_name">{proyectName}</h4>
-        <div className="proyect-card_icons">
+      <div className="proyectCard__body">
+        <h4 className="proyectCard__name">{proyectName}</h4>
+        <div className="proyectCard__icons">
           {icons.map((icon, index) => (
             <Technology icon={icon} key={index} />
           ))}
         </div>
-        <div className="proyect-card_buttons">
-          <a href={repo} target="_blank" className="proyect-card_repo">
+        <div className="proyectCard__buttons">
+          <a href={repo} target="_blank" className="proyectCard__repo">
             Ver Código
             <Technology icon={faGithub} />
           </a>
-          <a href={link} target="_blank" className="proyect-card_link">
+          <a href={link} target="_blank" className="proyectCard__link">
             Ver Página
             <Technology icon={faUpRightFromSquare} />
           </a>

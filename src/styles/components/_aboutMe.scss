@@ -1,35 +1,50 @@
-.sobremi {
+.aboutMe {
   width: 100%;
   animation: page-intro .4s ease forwards;
 
-  &__texto {
-    margin-top: 20px;
+  &__text {
     line-height: 25px;
-    font-size: 1.1em;
+    font-size: 0.9rem;
+
+    &:nth-child(1) {
+      margin-top: 20px;
+    }
   }
 
-  .hard-soft_skills {
+  &__hard-Soft-Skills {
     display: grid;
     margin-top: 30px;
-    gap: 30px;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 
-    .techStack {
-      margin-top: 20px;
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
+    .hard-skills {
+      height: 100%;
+      border-right: 3px solid $primary;
+      padding-right: 15px;
 
-      img {
-        width: 40px;
+      .techStack {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+          width: 40px;
+        }
       }
     }
 
-    .sobremi__aptitudes_lista {
-      margin: 5px 10px 10px 0;
-      font-size: 1em;
-      list-style: disc;
-      list-style-type: none;
+    .soft-skills {
+      padding-left: 15px;
+      line-height: 1.5rem;
     }
+  }
+
+  &__aptitudes {
+    margin: 5px 10px 10px 0;
+    font-size: 1em;
+    list-style: disc;
+    list-style-type: none;
   }
 }

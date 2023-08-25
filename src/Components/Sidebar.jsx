@@ -11,7 +11,7 @@ const Sidebar = () => {
       <div className="sidebar__img">
         <img src="/foto-de-perfil.jpg" alt="foto De Perfil" />
       </div>
-      <div className="sidebar__texto">
+      <div className="sidebar__text">
         <h3>Fabián Vargas</h3>
         <h4>Estudiante</h4>
         <div className="sidebar__links-redes">

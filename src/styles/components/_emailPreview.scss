@@ -1,4 +1,4 @@
-.previsualización_container {
+.preview {
   padding: 5px;
   max-width: 400px;
   min-height: 200px;
@@ -9,24 +9,24 @@
   line-height: 35px;
   border-radius: 5px;
 
-  .email_title {
+  .email__title {
     font-size: 0.9em;
   }
 
-  .email_to {
+  .email__to {
     font-size: 0.7em;
   }
 
-  .email_asunto {
+  .email__asunto {
     font-size: 0.8em;
   }
 
-  .email_message {
+  .email__message {
     font-size: 0.6em;
     line-height: normal;
   }
 
-  .email_from {
+  .email__from {
     margin-top: 20px;
     border-top: 2px dashed $third;
     font-size: .6em;

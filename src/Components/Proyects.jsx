@@ -31,11 +31,11 @@ const Proyects = () => {
   };
 
   return (
-    <div className="page_proyectos" id="proyectos">
+    <div className="page_proyects" id="proyectos">
       <h2 className="title">Proyectos</h2>
       <div className="content" ref={pageContentRef}>
         <nav>
-          <ul className="filtros_proyectos">
+          <ul className="proyects__filters">
             <li
               onClick={handleClick}
               data-value="todos"
@@ -66,7 +66,7 @@ const Proyects = () => {
             </li>
           </ul>
         </nav>
-        <div className="proyects_container">
+        <div className="proyects__container">
           {proyectosData
             .filter((proyecto) => {
               if (filterState !== "todos") {

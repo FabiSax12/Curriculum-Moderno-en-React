@@ -4,16 +4,24 @@ const AboutMe = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
-    <div className="sobremi" id="sobreMi">
+    <div className="aboutMe" id="aboutMe">
       <h2 className="title">Sobre Mi</h2>
       <div className="content" ref={pageContentRef}>
-        <p className="sobremi__texto">
-          Joven apasionado por la ingeniería y la resolución de problemas,
-          adicto al aprendizaje y fanático de los verdaderos retos.
+        <p className="aboutMe__text">
+          Soy un joven apasionado por la ingeniería y la resolución de problemas, adicto al aprendizaje y
+          fanático de los verdaderos retos.
         </p>
-        <p>Desarrollador Front-End en progreso...</p>
-        <section className="hard-soft_skills">
-          <div>
+        <p className="aboutMe__text">
+          Mi primer contacto con la programación fue en la secundaria,
+          mientras cursaba un técnico en electrónica. Me enamoré de Arduino en ese momento.
+          A partir de ahí, me adentré en Python, donde aprendí ciertas bases, y descubrí HTML, CSS y JS.
+        </p>
+        <p className="aboutMe__text">
+          Encuentro comodidad en esta área y, con la determinación de mejorar constantemente,
+          visualizo mi futuro como un Desarrollador Web.
+        </p>
+        <section className="aboutMe__hard-Soft-Skills">
+          <div className="hard-skills">
             <h2 className="subtitle">Tech Stack / Hard Skills</h2>
             <div className="techStack">
               <img src="/tecnologías/html.png" alt="HTML Logo" />
@@ -26,9 +34,9 @@ const AboutMe = () => {
               <img src="/tecnologías/github.png" alt="Github Logo" />
             </div>
           </div>
-          <div>
+          <div className="soft-skills">
             <h2 className="subtitle">Soft Skills</h2>
-            <ul className="sobremi__aptitudes_lista">
+            <ul className="aboutMe__aptitudes">
               <li>Deseo de aprender cosas nuevas</li>
               <li>Inteligente</li>
               <li>Responsable y puntual.</li>

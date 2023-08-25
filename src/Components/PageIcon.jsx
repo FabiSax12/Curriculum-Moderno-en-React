@@ -2,8 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PageIcon = ({ icon, name }) => {
   return (
-    <button className={`navegacion_btn ${name}`}>
-      <FontAwesomeIcon icon={icon} className={`navegacion_btn_icon ${name}`} />
+    <button className={`navigation__button ${name}`}>
+      <FontAwesomeIcon
+        icon={icon}
+        className={`navigation__button_icon ${name}`}
+      />
     </button>
   );
 };

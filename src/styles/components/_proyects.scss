@@ -1,10 +1,10 @@
-.page_proyectos {
+.page_proyects {
   width: 100%;
   height: max-content;
   animation: page-intro .4s ease forwards;
 
   .content {
-    .filtros_proyectos {
+    .proyects__filters {
       margin-top: 20px;
       padding: 0 0 5px 20px;
       display: flex;
@@ -25,7 +25,7 @@
       }
     }
 
-    .proyects_container {
+    .proyects__container {
       margin: 20px auto;
       max-width: 95%;
       display: grid;

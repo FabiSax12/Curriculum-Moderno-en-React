@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="navegacion">
+    <div className="navigation">
       <Link to="/home">
         <PageIcon icon={faHome} name="home" />
       </Link>

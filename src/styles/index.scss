@@ -1,5 +1,7 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 // Base
 @import "./base/settings";
@@ -30,6 +32,7 @@
 // Curriculum
 @import "./components/resume";
 @import "./components/Job";
+@import "./components/academic";
 
 // Proyectos
 @import "./components/proyects";
@@ -43,11 +46,18 @@
 @import "./components/loadSpin";
 @import "./components/emailPreview";
 
+html {
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Noto Sans KR";
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
 }
 
 #root {
@@ -69,6 +79,7 @@ body {
 .title {
   padding-bottom: 10px;
   border-bottom: 2px solid $primary;
+  color: $primary;
 }
 
 .subtitle {

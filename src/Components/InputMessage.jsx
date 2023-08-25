@@ -1,5 +1,5 @@
 const InputMessage = ({ mensaje }) => {
-  return <p className="mensaje_input">{mensaje}</p>;
+  return <p className="menssage_input">{mensaje}</p>;
 };
 
 export default InputMessage;

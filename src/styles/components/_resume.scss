@@ -1,7 +1,19 @@
-.page_formación {
+.page_resume {
   animation: page-intro .4s ease forwards;
 
   section {
     margin: 20px 0 0;
+
+    .subtitle {
+      text-align: center;
+    }
+  }
+
+  .formacion_academica {
+    margin-top: 50px;
+
+    .subtitle {
+      margin-bottom: 20px;
+    }
   }
 }

@@ -55,7 +55,7 @@ const Proyects = () => {
               data-value="cliente"
               className={filterState === "cliente" ? "selected" : ""}
             >
-              Para Clientes
+              Clientes
             </li>
             <li
               onClick={handleClick}

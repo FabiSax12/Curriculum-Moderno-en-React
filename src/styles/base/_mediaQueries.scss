@@ -17,6 +17,12 @@
   .principal {
     margin: 0;
   }
+
+  .page_proyects {
+    nav {
+      font-size: .7rem;
+    }
+  }
 }
 
 // Mobile
@@ -146,25 +152,26 @@
 
           .experiencia_laboral {
             .job {
-              grid-template-columns: 1fr;
+              // grid-template-columns: min-content 1fr;
+              grid-template:
+                "ornament text1"
+                "ornament text2" /
+                max-content 1fr
+              ;
+              column-gap: 15px;
 
               &__place-date {
                 text-align: start;
+                grid-area: text1;
               }
 
               .ornament {
-                grid-row: 3 / 4;
-                flex-direction: row;
-                justify-content: start;
-
-                &__line {
-                  width: 90%;
-                  height: 2px;
-                }
+                grid-area: ornament;
               }
 
               .content_info {
                 margin-top: 10px;
+                grid-area: text2;
               }
             }
           }
@@ -179,7 +186,7 @@
 
           nav {
             ul {
-              font-size: .7em;
+              font-size: .7rem;
               padding: 0 0 10px;
               gap: 0;
               justify-content: space-evenly;

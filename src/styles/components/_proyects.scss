@@ -6,10 +6,11 @@
   .content {
     .proyects__filters {
       margin-top: 20px;
-      padding: 0 0 5px 20px;
+      padding: 0 0 5px;
       display: flex;
       flex-direction: row;
-      gap: 40px;
+      justify-content: space-around;
+      // gap: 40px;
       border-bottom: 2px solid $third;
 
       li {
@@ -19,7 +20,7 @@
         user-select: none;
 
         &.selected {
-          transform: scale(1.2);
+          transform: scale(1.1);
           color: $primary;
         }
       }

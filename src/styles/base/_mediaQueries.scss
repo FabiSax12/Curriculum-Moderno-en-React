@@ -98,15 +98,22 @@
       }
 
       // About
-      .sobremi {
+      .aboutMe {
         height: 100%;
 
         .content {
           text-align: center;
           line-height: 1.5em;
+          padding: 0 15px;
 
-          .hard-soft_skills {
+          .aboutMe__hard-Soft-Skills {
             grid-template-columns: 1fr;
+            gap: 40px;
+
+            .hard-skills {
+              border: none;
+              padding: 0;
+            }
 
             .subtitle {
               text-align: center;
@@ -116,7 +123,11 @@
               justify-content: center;
             }
 
-            .sobremi__aptitudes_lista {
+            .soft-skills {
+              padding: 0;
+            }
+
+            .aboutMe__aptitudes {
               text-align: center;
             }
           }
@@ -124,7 +135,7 @@
       }
 
       // Curriculum
-      .page_formación {
+      .page_resume {
         height: 100%;
 
         .content {
@@ -134,16 +145,22 @@
           }
 
           .experiencia_laboral {
-
-            .trabajo {
+            .job {
               grid-template-columns: 1fr;
 
-              .content_lugar-fecha {
+              &__place-date {
                 text-align: start;
               }
 
-              .content_icon {
-                display: none;
+              .ornament {
+                grid-row: 3 / 4;
+                flex-direction: row;
+                justify-content: start;
+
+                &__line {
+                  width: 90%;
+                  height: 2px;
+                }
               }
 
               .content_info {
@@ -168,6 +185,21 @@
               justify-content: space-evenly;
             }
           }
+
+          // .proyects_container {
+          //   overflow: scroll;
+
+          //   &::-webkit-scrollbar {
+          //     width: 3px;
+          //     height: 100px;
+          //   }
+
+          //   &::-webkit-scrollbar-thumb {
+          //     background-color: #1ea9e5;
+          //     opacity: 1;
+          //     border-radius: 10px;
+          //   }
+          // }
         }
       }
 
@@ -188,7 +220,7 @@
     }
   }
 
-  .navegacion {
+  .navigation {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -197,7 +229,7 @@
     box-shadow: 0 10px 30px $third;
     position: fixed;
     bottom: 0;
-    background-color: $secondary;
+    background-color: #fff;
   }
 }
 

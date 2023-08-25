@@ -105,8 +105,11 @@
   text-align: center;
   line-height: 3em;
 }
+.sidebar__text h3 {
+  font-weight: 500;
+}
 .sidebar__text h4 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2em;
 }
 .sidebar__text .sidebar_cv {
@@ -114,18 +117,19 @@
   margin: 40px;
   width: 150px;
   height: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #F2F4FF;
   border-radius: 50px;
   background-color: #1ea9e5;
-  color: #fff;
+  color: #F2F4FF;
   font-size: 0.9em;
+  font-weight: 400;
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s ease all;
 }
 .sidebar__text .sidebar_cv:hover {
   transform: scale(1.03);
-  background-color: #fff;
+  background-color: #F2F4FF;
   color: #1ea9e5;
 }
 .sidebar__copyrigth {
@@ -236,6 +240,7 @@
 }
 .page_home_title h4 {
   color: rgba(128, 128, 128, 0.6862745098);
+  font-weight: 500;
 }
 
 .skills {
@@ -271,7 +276,7 @@
 }
 .aboutMe__text {
   line-height: 25px;
-  font-size: 1.1em;
+  font-size: 0.9rem;
 }
 .aboutMe__text:nth-child(1) {
   margin-top: 20px;
@@ -284,7 +289,7 @@
 }
 .aboutMe__hard-Soft-Skills .hard-skills {
   height: 100%;
-  border-right: 1px solid #1ea9e5;
+  border-right: 3px solid #1ea9e5;
   padding-right: 15px;
 }
 .aboutMe__hard-Soft-Skills .hard-skills .techStack {
@@ -299,6 +304,7 @@
 }
 .aboutMe__hard-Soft-Skills .soft-skills {
   padding-left: 15px;
+  line-height: 1.5rem;
 }
 .aboutMe__aptitudes {
   margin: 5px 10px 10px 0;
@@ -313,6 +319,15 @@
 .page_resume section {
   margin: 20px 0 0;
 }
+.page_resume section .subtitle {
+  text-align: center;
+}
+.page_resume .formacion_academica {
+  margin-top: 50px;
+}
+.page_resume .formacion_academica .subtitle {
+  margin-bottom: 20px;
+}
 
 .job {
   display: grid;
@@ -321,6 +336,7 @@
   gap: 5px;
 }
 .job__place-date {
+  padding-bottom: 10px;
   text-align: end;
   color: #1ea9e5;
 }
@@ -341,10 +357,49 @@
   margin: 3px auto;
 }
 .job .ornament__line {
-  width: 1px;
+  width: 2px;
   height: 100%;
   margin: 0 auto;
   background-color: rgba(128, 128, 128, 0.6862745098);
+}
+
+.academic {
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr;
+  gap: 5px;
+  line-height: 25px;
+}
+.academic__place-date {
+  padding-bottom: 30px;
+  font-size: 1rem;
+  text-align: end;
+  color: #212227;
+}
+.academic__place-date p {
+  font-size: 0.7em;
+  color: rgba(128, 128, 128, 0.6862745098);
+}
+.academic .ornament {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: small;
+  color: #1ea9e5;
+}
+.academic .ornament__icon {
+  margin: 3px auto;
+  position: relative;
+}
+.academic .ornament__line {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.6862745098);
+}
+.academic__info p {
+  font-size: 0.8rem;
 }
 
 .page_proyects {
@@ -794,23 +849,23 @@ body {
   .principal .pages .page_home .skills__container .skill svg {
     zoom: 1.3;
   }
-  .principal .pages .sobremi {
+  .principal .pages .aboutMe {
     height: 100%;
   }
-  .principal .pages .sobremi .content {
+  .principal .pages .aboutMe .content {
     text-align: center;
     line-height: 1.5em;
   }
-  .principal .pages .sobremi .content .hard-soft_skills {
+  .principal .pages .aboutMe .content .hard-soft_skills {
     grid-template-columns: 1fr;
   }
-  .principal .pages .sobremi .content .hard-soft_skills .subtitle {
+  .principal .pages .aboutMe .content .hard-soft_skills .subtitle {
     text-align: center;
   }
-  .principal .pages .sobremi .content .hard-soft_skills .techStack {
+  .principal .pages .aboutMe .content .hard-soft_skills .techStack {
     justify-content: center;
   }
-  .principal .pages .sobremi .content .hard-soft_skills .sobremi__aptitudes_lista {
+  .principal .pages .aboutMe .content .hard-soft_skills .aboutMe__aptitudes_lista {
     text-align: center;
   }
   .principal .pages .page_formación {
@@ -851,7 +906,7 @@ body {
     width: 100%;
     margin: 0;
   }
-  .navegacion {
+  .navigation {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -860,7 +915,7 @@ body {
     box-shadow: 0 10px 30px rgba(128, 128, 128, 0.6862745098);
     position: fixed;
     bottom: 0;
-    background-color: #fff;
+    background-color: #F2F4FF;
   }
 }
 @media screen and (max-width: 350px) {

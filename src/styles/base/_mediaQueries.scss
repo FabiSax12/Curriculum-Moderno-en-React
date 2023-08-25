@@ -3,7 +3,7 @@
     display: block;
   }
 
-  .previsualización_container {
+  .preview {
     display: none;
   }
 }
@@ -172,7 +172,7 @@
       }
 
       // Proyectos
-      .page_proyectos {
+      .page_proyects {
         height: 100%;
 
         .content {
@@ -185,26 +185,11 @@
               justify-content: space-evenly;
             }
           }
-
-          // .proyects_container {
-          //   overflow: scroll;
-
-          //   &::-webkit-scrollbar {
-          //     width: 3px;
-          //     height: 100px;
-          //   }
-
-          //   &::-webkit-scrollbar-thumb {
-          //     background-color: #1ea9e5;
-          //     opacity: 1;
-          //     border-radius: 10px;
-          //   }
-          // }
         }
       }
 
       // Contacto
-      .page_contacto {
+      .page_contact {
         height: 100%;
 
         form {

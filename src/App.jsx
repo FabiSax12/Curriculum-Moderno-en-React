@@ -13,7 +13,18 @@ function App() {
     <HashRouter>
       <section className="principal">
         <Sidebar />
-        <Pages />
+        {/* <Pages /> */}
+        <section className="pages">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/curriculum" element={<Resume />} />
+            <Route path="/proyects" element={<Proyects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route element={<Home />} />
+          </Routes>
+        </section>
       </section>
       <Navigation />
     </HashRouter>

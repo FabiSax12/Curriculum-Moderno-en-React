@@ -9,6 +9,7 @@ const Pages = () => {
   return (
     <section className="pages">
       <Routes>
+        <Route element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />

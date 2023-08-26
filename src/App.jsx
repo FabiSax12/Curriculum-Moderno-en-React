@@ -1,19 +1,20 @@
 import Sidebar from "./Components/Sidebar";
 import Pages from "./Components/Pages";
 import Navigation from "./Components/Navigation";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
-import Home from "./Components/Home";
-import AboutMe from "./Components/AboutMe";
-import Resume from "./Components/Resume";
-import Proyects from "./Components/Proyects";
-import Contact from "./Components/Contact";
+import { HashRouter } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [sidebarState, setSidebarState] = useState(false)
+  const handleSideBar = () => {
+    setSidebarState(!sidebarState)
+  }
+
   return (
     <HashRouter>
       <section className="principal">
-        <Sidebar />
-        <Pages />
+        <Sidebar state={sidebarState} />
+        <Pages menu={handleSideBar} state={sidebarState} />
       </section>
       <Navigation />
     </HashRouter>

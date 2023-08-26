@@ -4,10 +4,18 @@ import Resume from "./Resume";
 import Proyects from "./Proyects";
 import Contact from "./Contact";
 import { Routes, Route } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Pages = () => {
+const Pages = ({ menu, state }) => {
   return (
     <section className="pages">
+      <div className={`menu ${state ? "close" : ""}`} onClick={() => menu()}>
+        {/* <FontAwesomeIcon icon={faBars} /> */}
+        <span className="menu__bar"></span>
+        <span className="menu__bar"></span>
+        <span className="menu__bar"></span>
+      </div>
       <Routes>
         <Route element={<Home />} />
         <Route path="/" element={<Home />} />

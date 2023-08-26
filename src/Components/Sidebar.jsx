@@ -5,9 +5,9 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Sidebar = () => {
+const Sidebar = ({ state }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${state ? "showSidebar" : ""}`}>
       <div className="sidebar__img">
         <img src="/foto-de-perfil.jpg" alt="foto De Perfil" />
       </div>

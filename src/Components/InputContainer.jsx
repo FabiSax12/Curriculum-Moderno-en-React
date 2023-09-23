@@ -17,7 +17,8 @@ function InputContainer({
       <label
         htmlFor={registerName}
         className={
-          isInputFocused ? "label-focused" : inputValue ? "label-focused" : ""
+          // isInputFocused ? "label-focused" : inputValue ? "label-focused" : ""
+          "label-focused"
         }
       >
         {labelText}

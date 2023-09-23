@@ -5,11 +5,14 @@
   &_title {
     width: max-content;
     height: max-content;
-    margin: 200px auto 0;
+    margin: 12.5rem auto 0;
+    /* Cambiado a unidades rem para el margen superior */
     text-align: center;
     font-weight: 400;
-    font-size: 1.2em;
-    line-height: 40px;
+    font-size: 0.75rem;
+    /* Cambiado a unidades rem para el tamaño de fuente */
+    line-height: 2.5rem;
+    /* Cambiado a unidades rem para la altura de línea */
     animation: home-intro 1.4s ease forwards;
 
     h2 {

@@ -1,22 +1,24 @@
 .page_proyects {
   width: 100%;
   height: max-content;
-  animation: page-intro .4s ease forwards;
+  animation: page-intro 0.4s ease forwards;
 
   .content {
     .proyects__filters {
-      margin-top: 20px;
-      padding: 0 0 5px;
+      margin-top: 1.25rem;
+      /* Cambiado a unidades rem para el margen superior */
+      padding: 0 0 0.3125rem;
+      /* Cambiado a unidades rem para el espaciado */
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      // gap: 40px;
-      border-bottom: 2px solid $third;
+      border-bottom: 0.125rem solid $third;
+      /* Cambiado a unidades rem para el grosor del borde */
 
       li {
         list-style: none;
         cursor: pointer;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         user-select: none;
 
         &.selected {
@@ -27,11 +29,14 @@
     }
 
     .proyects__container {
-      margin: 20px auto;
+      margin: 1.25rem auto;
+      /* Cambiado a unidades rem para el margen */
       max-width: 95%;
       display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+      /* Cambiado a unidades rem para el espacio entre elementos */
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+      /* Cambiado a unidades rem para las columnas */
       justify-items: center;
     }
   }

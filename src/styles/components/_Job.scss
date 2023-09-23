@@ -1,16 +1,21 @@
 .job {
   display: grid;
-  grid-template-columns: 160px 20px 1fr;
-  margin-top: 20px;
-  gap: 5px;
+  grid-template-columns: 10rem 1.25rem 1fr;
+  /* Cambiado a unidades rem para las columnas */
+  margin-top: 1.25rem;
+  /* Cambiado a unidades rem para el margen superior */
+  gap: 0.3125rem;
+  /* Cambiado a unidades rem para el espacio entre elementos */
 
   &__place-date {
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
+    /* Cambiado a unidades rem para el espaciado */
     text-align: end;
     color: $primary;
 
     p {
-      font-size: .7em;
+      font-size: 0.8rem;
+      /* Cambiado a unidades rem para el tamaño de fuente */
       color: $third;
     }
   }
@@ -25,11 +30,13 @@
     color: $primary;
 
     &__icon {
-      margin: 3px auto;
+      margin: 0.1875rem auto;
+      /* Cambiado a unidades rem para el margen */
     }
 
     &__line {
-      width: 2px;
+      width: 0.125rem;
+      /* Cambiado a unidades rem para el ancho */
       height: 100%;
       margin: 0 auto;
       background-color: $third;

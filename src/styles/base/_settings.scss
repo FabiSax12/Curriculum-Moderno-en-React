@@ -5,6 +5,15 @@ $back: #212227;
 $clr-error: #e03030;
 
 $cantidad: 8;
-$widthCasilla: 32px;
-$widthCasillaMobile: 18px;
-$gap: 20px;
+$widthCasilla: 2rem;
+$widthCasillaMobile: 1.125rem;
+$gap: 1.25rem;
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

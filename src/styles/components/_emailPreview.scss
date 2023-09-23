@@ -1,13 +1,13 @@
 .preview {
-  padding: 5px;
-  max-width: 400px;
-  min-height: 200px;
+  padding: 0.3125rem;
+  max-width: 25rem;
+  min-height: 12.5rem;
   height: max-content;
   display: inline;
-  border: 1px dashed $third;
-  font-size: 20px;
-  line-height: 35px;
-  border-radius: 5px;
+  border: 0.0625rem dashed $third;
+  font-size: 1.25rem;
+  line-height: 2.1875rem;
+  border-radius: 0.3125rem;
 
   .email__title {
     font-size: 0.9em;
@@ -27,8 +27,8 @@
   }
 
   .email__from {
-    margin-top: 20px;
-    border-top: 2px dashed $third;
+    margin-top: 1.25rem;
+    border-top: 0.125rem dashed $third;
     font-size: .6em;
   }
 }

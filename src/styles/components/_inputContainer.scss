@@ -1,23 +1,30 @@
 .input_container {
-  margin-right: 50px;
+  margin-right: 3.125rem;
+  /* Cambiado a unidades rem para el margen */
   position: relative;
 
   label {
     display: block;
-    padding: 0 8px;
+    padding: 0 0.5rem;
+    /* Cambiado a unidades rem para el padding */
     color: $third;
     position: absolute;
-    top: 10px;
-    left: 18px;
-    font-size: .8em;
+    top: 0.625rem;
+    /* Cambiado a unidades rem para la posición superior */
+    left: 1.125rem;
+    /* Cambiado a unidades rem para la posición izquierda */
+    font-size: 0.8rem;
+    /* Cambiado a unidades rem para el tamaño de fuente */
     font-weight: 600;
-    transition: all .1s ease;
+    transition: all 0.1s ease;
     text-transform: capitalize;
   }
 
   .label-focused {
-    top: -18px;
-    left: 10px;
+    top: -1.125rem;
+    /* Cambiado a unidades rem para la posición superior */
+    left: 0.625rem;
+    /* Cambiado a unidades rem para la posición izquierda */
     user-select: none;
     cursor: pointer;
   }
@@ -28,9 +35,12 @@
 
   .form_input {
     width: 100%;
-    padding: 8px 14px;
-    border: 2px solid $third;
-    border-radius: 5px;
+    padding: 0.5rem 0.875rem;
+    /* Cambiado a unidades rem para el padding */
+    border: 0.125rem solid $third;
+    /* Cambiado a unidades rem para el grosor del borde */
+    border-radius: 0.3125rem;
+    /* Cambiado a unidades rem para el radio del borde */
     outline: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -41,17 +51,21 @@
 }
 
 .form_button {
-  padding: .5em 1em;
+  padding: 0.3125rem 0.625rem;
+  /* Cambiado a unidades rem para el padding */
   margin: 0 auto;
   background-color: $primary;
   color: #fff;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: transform .3s ease;
+  border-radius: 0.3125rem;
+  /* Cambiado a unidades rem para el radio del borde */
+  font-size: 1rem;
+  /* Cambiado a unidades rem para el tamaño de fuente */
+  transition: transform 0.3s ease;
 
   &:hover {
     cursor: pointer;
-    transform: translateY(-5px);
+    transform: translateY(-0.3125rem);
+    /* Cambiado a unidades rem para la transformación */
   }
 }

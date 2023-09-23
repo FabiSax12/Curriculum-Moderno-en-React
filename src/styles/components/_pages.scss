@@ -1,47 +1,60 @@
 .pages {
   max-width: 100%;
   max-height: 100%;
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
+  /* Cambiado a unidades rem para el espaciado */
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 1.25rem;
+  /* Cambiado a unidades rem para el radio del borde */
 }
 
 .menu {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  /* Cambiado a unidades rem para el ancho */
+  height: 1.625rem;
+  /* Cambiado a unidades rem para la altura */
   border-radius: 50%;
   display: none;
   flex-direction: column;
-  row-gap: 3px;
+  row-gap: 0.1875rem;
+  /* Cambiado a unidades rem para el espacio entre filas */
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 10px;
-  top: 10px;
+  right: 0.625rem;
+  /* Cambiado a unidades rem para la posición derecha */
+  top: 0.625rem;
+  /* Cambiado a unidades rem para la posición superior */
   zoom: 1.4;
   z-index: 4;
   color: #fff;
   background-color: $primary;
 
   &__bar {
-    height: 1.5px;
-    width: 14px;
+    height: 0.09375rem;
+    /* Cambiado a unidades rem para la altura */
+    width: 0.875rem;
+    /* Cambiado a unidades rem para el ancho */
     background-color: #fff;
-    border-radius: 10px;
-    transition: all .2s ease;
+    border-radius: 0.625rem;
+    /* Cambiado a unidades rem para el radio del borde */
+    transition: all 0.2s ease;
   }
 
   &.close {
     .menu__bar:nth-child(1) {
-      transform: rotateZ(-45deg) translateY(3px) translateX(-2px);
+      transform: rotateZ(-45deg) translateY(0.1875rem) translateX(-0.125rem);
+      /* Cambiado a unidades rem para las transformaciones */
     }
 
     .menu__bar:nth-child(2) {
-      transform: translateX(-50px);
+      transform: translateX(-1.25rem);
+      /* Cambiado a unidades rem para la transformación */
     }
 
     .menu__bar:nth-child(3) {
-      transform: rotateZ(45deg) translateY(-4px) translateX(-3px);
+      transform: rotateZ(45deg) translateY(-0.25rem) translateX(-0.1875rem);
+      /* Cambiado a unidades rem para las transformaciones */
     }
   }
 }

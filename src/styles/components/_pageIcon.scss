@@ -1,7 +1,6 @@
-/* Generales */
 .navigation__button {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -21,46 +20,56 @@
     opacity: 0;
     content: "";
     width: max-content;
-    height: 15px;
-    padding: 5px;
+    height: 0.9375rem;
+    /* Cambiado a unidades rem para la altura */
+    padding: 0.3125rem;
+    /* Cambiado a unidades rem para el padding */
     background-color: $primary;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+    /* Cambiado a unidades rem para el radio del borde */
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
+    /* Cambiado a unidades rem para el tamaño de fuente */
     font-weight: 200;
     position: absolute;
-    transition: transform .3s, opacity .2s;
+    transition: transform 0.3s, opacity 0.2s;
   }
 
   &.home::after {
     content: "Inicio";
-    left: 3px;
+    left: 0.1875rem;
+    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.user::after {
     content: "Sobre Mi";
-    left: -8px;
+    left: -0.5rem;
+    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.cap::after {
     content: "Curriculum";
-    left: -14px;
+    left: -0.875rem;
+    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.brief-case::after {
     content: "Proyectos";
-    left: -11px;
+    left: -0.6875rem;
+    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.envelope::after {
     content: "Contacto";
-    left: -7px;
+    left: -0.4375rem;
+    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   /* After Hover */
   &:hover::after {
     opacity: 1;
-    transform: translateY(-43px);
+    transform: translateY(-2.6875rem);
+    /* Cambiado a unidades rem para la transformación */
   }
 }

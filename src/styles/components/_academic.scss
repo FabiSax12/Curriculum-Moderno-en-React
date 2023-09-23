@@ -1,17 +1,17 @@
 .academic {
   display: grid;
-  grid-template-columns: 1fr 20px 1fr;
-  gap: 5px;
-  line-height: 25px;
+  grid-template-columns: 1fr 1rem 1fr;
+  gap: 0.3125rem;
+  line-height: 1.5625rem;
 
   &__place-date {
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     font-size: 1rem;
     text-align: end;
     color: $back;
 
     p {
-      font-size: .7em;
+      font-size: 0.4375rem;
       color: $third;
     }
   }
@@ -26,12 +26,12 @@
     color: $primary;
 
     &__icon {
-      margin: 3px auto;
+      margin: 0.1875rem auto;
       position: relative;
     }
 
     &__line {
-      width: 2px;
+      width: 0.125rem;
       height: 100%;
       margin: 0 auto;
       background-color: $third;
@@ -40,7 +40,7 @@
 
   &__info {
     p {
-      font-size: .8rem;
+      font-size: 0.5rem;
     }
   }
 }

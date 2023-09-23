@@ -1,26 +1,23 @@
 .proyectCard {
   width: 15rem;
-  /* Cambiado a unidades rem para el ancho */
   box-shadow: 0 0 1.25rem $third;
-  /* Cambiado a unidades rem para el sombreado */
   border-radius: 0.1875rem;
-  /* Cambiado a unidades rem para el radio del borde */
   overflow: hidden;
 
   img {
     width: 100%;
     height: 8.4375rem;
-    /* Cambiado a unidades rem para la altura */
+
   }
 
   &__body {
     padding: 0.3125rem 0.625rem;
-    /* Cambiado a unidades rem para el espaciado */
+
   }
 
   &__name {
     margin-bottom: 0.3125rem;
-    /* Cambiado a unidades rem para el margen inferior */
+
     color: $primary;
     font-weight: bold;
   }
@@ -28,9 +25,9 @@
   &__icons {
     display: flex;
     gap: 1.125rem;
-    /* Cambiado a unidades rem para el espacio entre íconos */
+
     margin-top: 0.625rem;
-    /* Cambiado a unidades rem para el margen superior */
+
 
     .skill {
       width: max-content;
@@ -39,23 +36,22 @@
     }
   }
 
-  /* Botones */
   &__buttons {
     display: flex;
     margin: 0.75rem 0 0.625rem;
-    /* Cambiado a unidades rem para el margen */
+
 
     a {
       flex: 1;
       padding: 0.1875rem 0.625rem;
-      /* Cambiado a unidades rem para el espaciado */
+
       border-radius: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       font-size: 0.8em;
-      /* Cambiado a unidades rem para el tamaño de fuente */
+
       cursor: pointer;
 
       .skill {
@@ -78,14 +74,14 @@
   &__repo {
     height: max-content;
     gap: 0.625rem;
-    /* Cambiado a unidades rem para el espacio entre elementos */
+
     background-color: #000;
     color: #fff;
   }
 
   &__link {
     gap: 0.1875rem;
-    /* Cambiado a unidades rem para el espacio entre elementos */
+
     color: #000;
   }
 }

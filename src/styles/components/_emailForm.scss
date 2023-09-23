@@ -1,14 +1,11 @@
 .form_grid {
   padding: 1.875rem 0.625rem;
-  /* Cambiado a unidades rem para el espaciado */
   display: grid;
   grid-template-columns: 20rem 1fr;
-  /* Cambiado a unidades rem para el ancho de columna */
 
   form {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    /* Cambiado a unidades rem para el espacio entre elementos */
   }
 }

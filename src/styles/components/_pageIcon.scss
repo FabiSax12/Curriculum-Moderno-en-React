@@ -15,22 +15,17 @@
     color: #07b4ff;
   }
 
-  /* ::after */
   &::after {
     opacity: 0;
     content: "";
     width: max-content;
     height: 0.9375rem;
-    /* Cambiado a unidades rem para la altura */
     padding: 0.3125rem;
-    /* Cambiado a unidades rem para el padding */
     background-color: $primary;
     color: #fff;
     border-radius: 0.3125rem;
-    /* Cambiado a unidades rem para el radio del borde */
     text-align: center;
     font-size: 0.875rem;
-    /* Cambiado a unidades rem para el tamaño de fuente */
     font-weight: 200;
     position: absolute;
     transition: transform 0.3s, opacity 0.2s;
@@ -39,37 +34,30 @@
   &.home::after {
     content: "Inicio";
     left: 0.1875rem;
-    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.user::after {
     content: "Sobre Mi";
     left: -0.5rem;
-    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.cap::after {
     content: "Curriculum";
     left: -0.875rem;
-    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.brief-case::after {
     content: "Proyectos";
     left: -0.6875rem;
-    /* Cambiado a unidades rem para la posición izquierda */
   }
 
   &.envelope::after {
     content: "Contacto";
     left: -0.4375rem;
-    /* Cambiado a unidades rem para la posición izquierda */
   }
 
-  /* After Hover */
   &:hover::after {
     opacity: 1;
     transform: translateY(-2.6875rem);
-    /* Cambiado a unidades rem para la transformación */
   }
 }

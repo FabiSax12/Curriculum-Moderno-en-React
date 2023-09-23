@@ -1,8 +1,6 @@
 .skills {
   margin: 1.875rem auto 0;
-  /* Cambiado a unidades rem para el margen */
   width: calcularWidth();
-  /* Asegúrate de calcular el valor deseado en función de tu diseño */
   height: auto;
   overflow: hidden;
   display: flex;
@@ -11,20 +9,17 @@
 
   &__container {
     margin-right: $gap;
-    /* Asegúrate de definir $gap según tus necesidades */
     display: flex;
     gap: $gap;
 
     &.animation {
       width: calc(#{$widthCasilla} * #{$cantidad} * 2);
-      /* Asegúrate de definir $widthCasilla y $cantidad */
       animation: slide 12s linear infinite;
       -webkit-animation: slide 12s linear infinite;
     }
 
     .skill {
       width: $widthCasilla;
-      /* Asegúrate de definir $widthCasilla */
 
       svg {
         color: $third;

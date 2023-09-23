@@ -6,14 +6,11 @@
   .content {
     .proyects__filters {
       margin-top: 1.25rem;
-      /* Cambiado a unidades rem para el margen superior */
       padding: 0 0 0.3125rem;
-      /* Cambiado a unidades rem para el espaciado */
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       border-bottom: 0.125rem solid $third;
-      /* Cambiado a unidades rem para el grosor del borde */
 
       li {
         list-style: none;
@@ -30,13 +27,10 @@
 
     .proyects__container {
       margin: 1.25rem auto;
-      /* Cambiado a unidades rem para el margen */
       max-width: 95%;
       display: grid;
       gap: 1.25rem;
-      /* Cambiado a unidades rem para el espacio entre elementos */
       grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-      /* Cambiado a unidades rem para las columnas */
       justify-items: center;
     }
   }

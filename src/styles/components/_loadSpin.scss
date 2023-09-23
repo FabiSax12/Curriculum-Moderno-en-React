@@ -8,11 +8,8 @@
 
 .sk-circle {
   margin: 1.25rem auto;
-  /* Cambiado a unidades rem para el margen */
   width: 2.5rem;
-  /* Cambiado a unidades rem para el ancho */
   height: 2.5rem;
-  /* Cambiado a unidades rem para la altura */
   position: relative;
 
   .sk-child {
@@ -27,9 +24,7 @@
       display: block;
       margin: 0 auto;
       width: 0.375rem;
-      /* Cambiado a unidades rem para el ancho */
       height: 0.375rem;
-      /* Cambiado a unidades rem para la altura */
       background-color: #333;
       border-radius: 100%;
       animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;

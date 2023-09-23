@@ -1,7 +1,6 @@
 .sidebar {
   height: 90%;
   padding: 1.25rem 0 0.625rem 0;
-  /* Cambiado a unidades rem para el espaciado */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,36 +10,27 @@
 
   &__img {
     width: 9.375rem;
-    /* Cambiado a unidades rem para el ancho */
     height: 9.375rem;
-    /* Cambiado a unidades rem para la altura */
     border-radius: 50%;
-    /* Cambiado a unidades rem para el radio del borde */
     position: relative;
     overflow: hidden;
     background-color: #fff;
 
     img {
       width: 11.25rem;
-      /* Cambiado a unidades rem para el ancho */
       position: absolute;
       top: -0.9375rem;
-      /* Cambiado a unidades rem para el desplazamiento superior */
       left: -0.75rem;
-      /* Cambiado a unidades rem para el desplazamiento izquierdo */
     }
   }
 
   &__text {
     margin-top: 1.25rem;
-    /* Cambiado a unidades rem para el margen superior */
     color: #fff;
     font-weight: 100;
     font-size: 1.125rem;
-    /* Cambiado a unidades rem para el tamaño de fuente */
     text-align: center;
     line-height: 3rem;
-    /* Cambiado a unidades rem para la altura de línea */
 
     h3 {
       font-weight: 500;
@@ -49,26 +39,19 @@
     h4 {
       font-weight: 300;
       font-size: 1.2rem;
-      /* Cambiado a unidades rem para el tamaño de fuente */
     }
   }
 
   &__text &_cv {
     display: block;
     margin: 2.5rem;
-    /* Cambiado a unidades rem para el margen */
     width: 9.375rem;
-    /* Cambiado a unidades rem para el ancho */
     height: 3.125rem;
-    /* Cambiado a unidades rem para la altura */
     border: 0.0625rem solid $secondary;
-    /* Cambiado a unidades rem para el grosor del borde */
     border-radius: 3.125rem;
-    /* Cambiado a unidades rem para el radio del borde */
     background-color: $primary;
     color: $secondary;
     font-size: 0.9rem;
-    /* Cambiado a unidades rem para el tamaño de fuente */
     font-weight: 400;
     text-decoration: none;
     cursor: pointer;
@@ -88,6 +71,5 @@
     left: 0;
     right: 0;
     font-size: 0.6rem;
-    /* Cambiado a unidades rem para el tamaño de fuente */
   }
 }

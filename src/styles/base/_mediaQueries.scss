@@ -1,6 +1,6 @@
 // ----- Desktop -----
 // 2K
-@media (min-width: 2100px) {
+@media screen and (min-device-width: 2100px) {
   html {
     font-size: 30px;
   }
@@ -11,7 +11,7 @@
 }
 
 // 4K
-@media (min-width: 3000px) {
+@media screen and (min-device-width: 3000px) {
   html {
     font-size: 46px;
   }
@@ -24,14 +24,18 @@
 // " FullDH "
 
 // HD
-@media (max-width: 1080px) {
+@media screen and (max-device-width: 1080px) {
   html {
     font-size: 12px;
+  }
+
+  .navigation__button_icon {
+    transform: scale(1.2);
   }
 }
 
 // ----- Mobile -----
-@media screen and (max-width: 900px) {
+@media screen and (max-device-width: 900px) {
   .form_grid {
     display: block;
   }
@@ -42,7 +46,7 @@
 }
 
 // Tablet
-@media screen and (max-width: 820px) {
+@media screen and (max-device-width: 820px) {
   #root {
     width: 100%;
   }
@@ -61,7 +65,7 @@
 }
 
 // Mobile
-@media screen and (max-width: 710px) {
+@media screen and (max-device-width: 710px) {
 
   * {
     box-sizing: border-box;
@@ -279,7 +283,7 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-device-width: 350px) {
   body {
     position: relative;
 

@@ -51,6 +51,7 @@ html {
   // font-family: "Noto Sans KR";
   // font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
 }
 
 body {
@@ -61,10 +62,11 @@ body {
 }
 
 #root {
-  width: 90%;
-  max-width: 1100px;
-  height: 80%;
-  max-height: 1000px;
+  width: 80vw;
+  // height: max-content;
+  // max-width: 1100px;
+  // height: 80%;
+  // max-height: 1000px;
 }
 
 /* Clases Globales */
@@ -77,14 +79,17 @@ body {
 }
 
 .title {
-  padding-bottom: 10px;
-  border-bottom: 2px solid $primary;
+  // padding-bottom: 10px;
+  padding-bottom: 1vw;
+  // border-bottom: 2px solid $primary;
+  border-bottom: .25vh solid $primary;
   color: $primary;
 }
 
 .subtitle {
   color: $primary;
-  font-size: 22px;
+  // font-size: 22px;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -92,11 +97,14 @@ body {
   width: 100%;
   height: 0;
   overflow-y: scroll;
-  border-bottom: 1px solid $primary;
+  // border-bottom: 1px solid $primary;
+  border-bottom: .25vh solid $primary;
   transition: height 2s cubic-bezier(0.23, 0.76, 0.58, 1), border-bottom 2.2s ease-out;
 
   &::-webkit-scrollbar {
-    width: 3px;
+    // width: 3px;
+    // height: 100px;
+    width: .20vw;
     height: 100px;
   }
 
@@ -108,7 +116,8 @@ body {
 }
 
 .show {
-  height: 500px;
+  // height: 500px;
+  height: 72vh;
   border-bottom-color: #fff;
 }
 

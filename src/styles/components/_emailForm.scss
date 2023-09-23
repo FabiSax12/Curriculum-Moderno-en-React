@@ -1,11 +1,14 @@
 .form_grid {
-  padding: 30px 10px;
+  // padding: 30px 10px;
+  padding: 4vh 1vw;
   display: grid;
-  grid-template-columns: 320px 1fr;
+  // grid-template-columns: 320px 1fr;
+  grid-template-columns: 23vw 1fr;
 
   form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    // gap: 20px;
+    gap: 4.5vh;
   }
 }

@@ -1,10 +1,14 @@
 .input_container {
-  margin-right: 50px;
+  // margin-right: 50px;
+  // margin-right: 4vw;
+  width: 20vw;
+  height: 6vh;
   position: relative;
 
   label {
     display: block;
-    padding: 0 8px;
+    // padding: 0 8px;
+    padding: 0 .5vw;
     color: $third;
     position: absolute;
     top: 10px;
@@ -16,8 +20,10 @@
   }
 
   .label-focused {
-    top: -18px;
-    left: 10px;
+    // top: -18px;
+    top: -2.5vh;
+    // left: 10px;
+    left: .6vw;
     user-select: none;
     cursor: pointer;
   }
@@ -27,12 +33,23 @@
   }
 
   .form_input {
+    height: 5vh;
+    box-sizing: border-box;
     width: 100%;
-    padding: 8px 14px;
-    border: 2px solid $third;
-    border-radius: 5px;
+    // padding: 8px 14px;
+    padding: .7vh 1vw;
+    // border: 2px solid $third;
+    border: .1vh solid $third;
+    // border-radius: 5px;
+    border-radius: .4vw;
     outline: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans',
+      'Lucida Sans Regular',
+      'Lucida Grande',
+      'Lucida Sans Unicode',
+      Geneva,
+      Verdana,
+      sans-serif;
   }
 
   .form_input:focus {
@@ -41,17 +58,19 @@
 }
 
 .form_button {
+  display: block;
   padding: .5em 1em;
   margin: 0 auto;
   background-color: $primary;
   color: #fff;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  // border-radius: 5px;
+  border-radius: .4vw;
+  font-size: .9em;
   transition: transform .3s ease;
 
   &:hover {
     cursor: pointer;
-    transform: translateY(-5px);
+    // transform: translateY(-5px);
   }
 }

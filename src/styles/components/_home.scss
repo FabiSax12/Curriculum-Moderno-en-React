@@ -1,15 +1,17 @@
 .page_home {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
 
   &_title {
-    width: max-content;
-    height: max-content;
-    margin: 200px auto 0;
+    // width: max-content;
+    // height: max-content;
+    // margin: 200px auto 0;
+    margin: 25vh auto 0;
     text-align: center;
     font-weight: 400;
     font-size: 1.2em;
-    line-height: 40px;
+    // line-height: 40px;
+    line-height: 7vh;
     animation: home-intro 1.4s ease forwards;
 
     h2 {

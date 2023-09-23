@@ -1,7 +1,9 @@
 /* Generales */
 .navigation__button {
-  width: 50px;
-  height: 50px;
+  // width: 50px;
+  width: 4vw;
+  // height: 50px;
+  height: 4vw;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -9,7 +11,9 @@
 
   &_icon {
     color: $third;
-    transform: scale(1.6);
+    // transform: scale(1.6);
+    width: 1.5vw;
+    height: 1.5vw;
   }
 
   &:hover &_icon {
@@ -21,13 +25,16 @@
     opacity: 0;
     content: "";
     width: max-content;
-    height: 15px;
-    padding: 5px;
+    // height: 15px;
+    height: 2vh;
+    // padding: 5px;
+    padding: .5vw;
     background-color: $primary;
     color: #fff;
-    border-radius: 5px;
+    // border-radius: 5px;
+    border-radius: .4vw;
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 200;
     position: absolute;
     transition: transform .3s, opacity .2s;
@@ -35,32 +42,33 @@
 
   &.home::after {
     content: "Inicio";
-    left: 3px;
+    left: 0.35vw;
   }
 
   &.user::after {
     content: "Sobre Mi";
-    left: -8px;
+    left: -.5vw;
   }
 
   &.cap::after {
     content: "Curriculum";
-    left: -14px;
+    left: -.9vw;
   }
 
   &.brief-case::after {
     content: "Proyectos";
-    left: -11px;
+    left: -.6vw;
   }
 
   &.envelope::after {
     content: "Contacto";
-    left: -7px;
+    left: -.5vw;
   }
 
   /* After Hover */
   &:hover::after {
     opacity: 1;
-    transform: translateY(-43px);
+    // transform: translateY(-43px);
+    transform: translateY(-6vh);
   }
 }

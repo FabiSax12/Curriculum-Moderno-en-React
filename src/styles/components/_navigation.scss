@@ -1,11 +1,17 @@
 .navigation {
-  width: 300px;
-  height: 50px;
-  padding: 0 10px;
-  margin: 40px auto 0;
-  border-radius: 50px;
+  // width: 300px;
+  // height: 50px;
+  width: 20vw;
+  height: 7vh;
+  // padding: 0 10px;
+  padding: 0 1vw;
+  // margin: 40px auto 0;
+  margin: 5vh auto 0;
+  // border-radius: 50px;
+  border-radius: 5vw;
   background-color: #fff;
-  box-shadow: 3px 3px 30px gray;
+  // box-shadow: 3px 3px 30px gray;
+  box-shadow: 0 0 4vh gray;
   display: flex;
   align-items: center;
   justify-content: space-around;

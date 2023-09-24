@@ -2,3 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 90%;
+  max-width: 68.75rem;
+  height: 80%;
+  max-height: 62.5rem;
+}

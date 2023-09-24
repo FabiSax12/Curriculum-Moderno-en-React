@@ -1,0 +1,28 @@
+@media screen and (max-device-width: 900px) {
+  .form_grid {
+    display: block;
+  }
+
+  .preview {
+    display: none;
+  }
+}
+
+// Tablet
+@media screen and (max-device-width: 820px) {
+  #root {
+    width: 100%;
+  }
+
+  .principal {
+    margin: 0;
+  }
+
+  .page_proyects {
+    nav {
+      font-size: .7rem;
+    }
+  }
+
+
+}

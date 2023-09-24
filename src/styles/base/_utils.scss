@@ -1,0 +1,44 @@
+/* Clases Globales */
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.title {
+  padding-bottom: 1rem;
+  border-bottom: 0.125rem solid $primary;
+  color: $primary;
+}
+
+.subtitle {
+  color: $primary;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  height: 0;
+  overflow-y: scroll;
+  border-bottom: 0.0625rem solid $primary;
+  transition: height 2s cubic-bezier(0.23, 0.76, 0.58, 1), border-bottom 2.2s ease-out;
+}
+
+.content::-webkit-scrollbar {
+  width: 0.1875rem;
+  height: 1.25rem;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  opacity: 1;
+  border-radius: 0.625rem;
+}
+
+.show {
+  height: 31.25rem;
+  border-bottom-color: #fff;
+}

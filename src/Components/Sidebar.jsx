@@ -1,4 +1,5 @@
 import SocialNetworks from "./SocialNetworks";
+import { ImgConvert } from "./ImgConvert"
 import {
   faInstagram,
   faLinkedin,
@@ -9,7 +10,8 @@ const Sidebar = ({ state }) => {
   return (
     <div className={`sidebar ${state ? "showSidebar" : ""}`}>
       <div className="sidebar__img">
-        <img src="/foto-de-perfil.jpg" alt="foto De Perfil" />
+        <ImgConvert folderPath="" fileName="foto-de-perfil" alt="foto De Perfil" />
+        {/* <img src="/foto-de-perfil.jpg" alt="foto De Perfil" /> */}
       </div>
       <div className="sidebar__text">
         <h3>Fabián Vargas</h3>

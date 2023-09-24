@@ -22,6 +22,11 @@
       border-right: 0.1875rem solid $primary;
       padding-right: 0.9375rem;
 
+      h3 {
+        color: $primary;
+        margin-top: 1.25rem;
+      }
+
       .techStack {
         margin-top: 1.25rem;
         display: flex;
@@ -43,8 +48,12 @@
 
   &__aptitudes {
     margin: 0.3125rem 0.625rem 0.625rem 0;
+    height: 85%;
     font-size: 1rem;
     list-style: disc;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

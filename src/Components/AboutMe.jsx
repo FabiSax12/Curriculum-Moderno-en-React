@@ -1,4 +1,5 @@
 import { useFirstActivation } from "../hooks/useFirstActivation";
+import { ImgConvert } from "./ImgConvert"
 
 const AboutMe = () => {
   const { pageContentRef } = useFirstActivation();
@@ -33,6 +34,13 @@ const AboutMe = () => {
               <img src="/tecnologías/git.webp" alt="Git Logo" />
               <img src="/tecnologías/github.png" alt="Github Logo" />
             </div>
+            <h3 className="">Aprendiendo...</h3>
+            <div className="techStack">
+              <img src="/tecnologías/ts.png" alt="TypeScript Logo" />
+              <img src="/tecnologías/nodejs.png" alt="NodeJS Logo" />
+              <img src="/tecnologías/express.png" alt="Express Logo" />
+              <img src="/tecnologías/mongodb.webp" alt="MongoDB Logo" />
+            </div>
           </div>
           <div className="soft-skills">
             <h2 className="subtitle">Soft Skills</h2>
@@ -46,8 +54,8 @@ const AboutMe = () => {
             </ul>
           </div>
         </section>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 

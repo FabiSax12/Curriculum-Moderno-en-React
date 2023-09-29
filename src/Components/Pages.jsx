@@ -1,17 +1,14 @@
-import Home from "./Home";
-import AboutMe from "./AboutMe";
-import Resume from "./Resume";
-import Proyects from "./Proyects";
-import Contact from "./Contact";
+import Home from "../routes/Home";
+import AboutMe from "../routes/AboutMe";
+import Resume from "../routes/Resume";
+import Proyects from "../routes/Proyects";
+import Contact from "../routes/Contact";
 import { Routes, Route } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Pages = ({ menu, state }) => {
   return (
     <section className="pages">
       <div className={`menu ${state ? "close" : ""}`} onClick={() => menu()}>
-        {/* <FontAwesomeIcon icon={faBars} /> */}
         <span className="menu__bar"></span>
         <span className="menu__bar"></span>
         <span className="menu__bar"></span>

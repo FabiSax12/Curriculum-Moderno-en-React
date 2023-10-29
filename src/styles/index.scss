@@ -47,6 +47,9 @@
 @import "./components/loadSpin";
 @import "./components/emailPreview";
 
+/* ----- ----- DarkMode ----- -----*/
+@import "./darkmode/dark-mode";
+
 /* ----- ----- Media Queries ----- ----- */
 @import "./MediaQ/Desktops";
 @import "./MediaQ/Tablets";

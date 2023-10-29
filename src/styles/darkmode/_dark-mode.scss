@@ -1,0 +1,39 @@
+body.dark-mode {
+  background-color: $secondary-dark;
+  transition: all .5s ease;
+
+  // Utils
+  .title {
+    color: $primary-dark;
+    border-bottom: 1px solid $primary-dark;
+  }
+
+  .subtilte {
+    color: $primary-dark;
+  }
+
+  // Components
+  .principal {
+    background-color: $primary-dark;
+  }
+
+  .sidebar {
+    a {
+      background-color: $primary-dark;
+    }
+  }
+
+  .pages {
+    background-color: $secondary-dark;
+    color: $white;
+  }
+
+  .navigation {
+    background-color: $secondary-dark;
+
+    svg {
+      color: $third-dark;
+    }
+  }
+
+}

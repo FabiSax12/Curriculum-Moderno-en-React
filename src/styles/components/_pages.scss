@@ -57,29 +57,58 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  overflow: hidden;
-  width: 1.3rem;
-  height: 3rem;
+  width: 1.5rem;
 
   .light-mode_switcher {
-    width: 5rem;
+    width: 4rem;
     display: flex;
     justify-content: space-between;
     transition: all .3s ease;
 
+    &.light {
+      transform: translateX(-2.6rem);
+
+      svg.sun {
+        opacity: 0;
+      }
+    }
+
+    &.dark {
+      svg.moon {
+        opacity: 0;
+      }
+    }
+
     svg {
       color: $primary;
-      width: 1.3rem;
+      width: 1.5rem;
       height: auto;
       cursor: pointer;
+      transition: all .2s ease;
 
       &.moon {
         transform: rotateZ(180deg);
       }
     }
+  }
+}
 
-    &.dark {
-      transform: rotateZ(180deg);
-    }
+@keyframes hide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1.5rem);
+  }
+}
+
+@keyframes show {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1.5rem);
   }
 }

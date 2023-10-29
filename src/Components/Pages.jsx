@@ -1,17 +1,31 @@
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "../routes/Home";
 import AboutMe from "../routes/AboutMe";
 import Resume from "../routes/Resume";
 import Proyects from "../routes/Proyects";
 import Contact from "../routes/Contact";
-import { Routes, Route } from "react-router-dom";
+import { FaSun, FaMoon } from "react-icons/fa"
 
 const Pages = ({ menu, state }) => {
+  const [isDark, setIsDark] = useState(true)
+
+  const handleLightMode = () => {
+    setIsDark(!isDark);
+  }
+
   return (
     <section className="pages">
       <div className={`menu ${state ? "close" : ""}`} onClick={() => menu()}>
         <span className="menu__bar"></span>
         <span className="menu__bar"></span>
         <span className="menu__bar"></span>
+      </div>
+      <div className="light-dark_container">
+        <div className={`light-mode_switcher ${isDark ? "dark" : "light"}`}>
+          <FaSun onClick={handleLightMode} className="sun" />
+          <FaMoon onClick={handleLightMode} className="moon" />
+        </div>
       </div>
       <Routes>
         <Route element={<Home />} />

@@ -1,8 +1,8 @@
-import Sidebar from "./Components/Sidebar";
-import Pages from "./Components/Pages";
-import Navigation from "./Components/Navigation";
-import { HashRouter } from "react-router-dom";
 import { useState } from "react";
+import { HashRouter } from "react-router-dom";
+import Sidebar from "./Components/Sidebar";
+import Pages from "./components/Pages";
+import Navigation from "./Components/Navigation";
 
 function App() {
   const [sidebarState, setSidebarState] = useState(false)

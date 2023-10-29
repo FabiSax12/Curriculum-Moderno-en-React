@@ -4,6 +4,7 @@
   padding: 0.9375rem 1.875rem;
   background-color: #fff;
   border-radius: 1.25rem;
+  position: relative;
 }
 
 .menu {
@@ -48,6 +49,37 @@
     .menu__bar:nth-child(3) {
       transform: rotateZ(45deg) translateY(-0.25rem) translateX(-0.1875rem);
 
+    }
+  }
+}
+
+.light-dark_container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  overflow: hidden;
+  width: 1.3rem;
+  height: 3rem;
+
+  .light-mode_switcher {
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease;
+
+    svg {
+      color: $primary;
+      width: 1.3rem;
+      height: auto;
+      cursor: pointer;
+
+      &.moon {
+        transform: rotateZ(180deg);
+      }
+    }
+
+    &.dark {
+      transform: rotateZ(180deg);
     }
   }
 }

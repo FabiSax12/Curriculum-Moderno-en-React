@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCircle } from "@fortawesome/free-regular-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
 
 export const Academic = ({ lugar, fecha, titulo, area }) => {
   return (
@@ -17,5 +17,5 @@ export const Academic = ({ lugar, fecha, titulo, area }) => {
         <p>{area}</p>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -6,8 +6,8 @@ module.exports = {
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react/prop-types"
+    "plugin:react/prop-types",
+    "plugin:react/jsx-runtime"
   ],
   "overrides": [
     {

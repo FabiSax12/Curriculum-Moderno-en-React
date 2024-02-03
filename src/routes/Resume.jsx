@@ -6,11 +6,11 @@ const Resume = () => {
   const { pageContentRef } = useFirstActivation();
 
   return (
-    <div className="page_resume" id="resume">
+    <div className="animate-page-intro" id="resume">
       <h2 className="title">Currículum</h2>
       <div className="content" ref={pageContentRef}>
-        <section className="experiencia_laboral">
-          <h3 className="subtitle">Experiencia Laboral</h3>
+        <section className="mt-5 mx-0 mb-0">
+          <h3 className="subtitle text-center">Experiencia Laboral</h3>
           <Job
             lugar="Almacen AMP"
             inicio="03 - 11 - 2022"
@@ -21,7 +21,7 @@ const Resume = () => {
             despachar pedidos de los clientes."
           />
         </section>
-        <section className="formacion_academica">
+        <section className="mt-14">
           <h3 className="subtitle">Formación Académica</h3>
           <Academic
             lugar="CTP Nataniel Arias Murillo"

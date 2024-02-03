@@ -25,48 +25,48 @@ const Proyects = () => {
   };
 
   const handleClick = (e) => {
-    e.currentTarget.classList.add("selected");
+    // e.currentTarget.classList.add("transform-[scale(1.1)]", "text-primary");
     const filtro = e.currentTarget.getAttribute("data-value");
     setFilterState(filtro);
   };
 
   return (
-    <div className="page_proyects" id="proyectos">
+    <div className="w-full h-max animate-page-intro" id="proyectos">
       <h2 className="title">Proyectos</h2>
       <div className="content" ref={pageContentRef}>
         <nav>
-          <ul className="proyects__filters">
+          <ul className="mt-5 pt-0 px-0 pb-1 flex flex-row justify-around border-b-[0.125rem] border-solid border-third">
             <li
               onClick={handleClick}
               data-value="todos"
-              className={filterState === "todos" ? "selected" : ""}
+              className={`list-none cursor-pointer transition-[all_.3s_ease] ${filterState === "todos" ? "scale-110 text-primary" : ""}`}
             >
               Todos
             </li>
             <li
               onClick={handleClick}
               data-value="personal"
-              className={filterState === "personal" ? "selected" : ""}
+              className={`list-none cursor-pointer transition-[all_.3s_ease] ${filterState === "personal" ? "scale-110 text-primary" : ""}`}
             >
               Personales
             </li>
             <li
               onClick={handleClick}
               data-value="cliente"
-              className={filterState === "cliente" ? "selected" : ""}
+              className={`list-none cursor-pointer transition-[all_.3s_ease] ${filterState === "cliente" ? "scale-110 text-primary" : ""}`}
             >
               Clientes
             </li>
             <li
               onClick={handleClick}
               data-value="mini"
-              className={filterState === "mini" ? "selected" : ""}
+              className={`list-none cursor-pointer transition-[all_.3s_ease] ${filterState === "mini" ? "scale-110 text-primary" : ""}`}
             >
               Mini Proyectos
             </li>
           </ul>
         </nav>
-        <div className="proyects__container">
+        <div className="my-5 m-auto max-w-[95%] grid gap-5 grid-cols-[repeat(auto-fill, minmax(15rem, 1fr)] justify-items-center">
           {proyectosData
             .filter((proyecto) => {
               if (filterState !== "todos") {

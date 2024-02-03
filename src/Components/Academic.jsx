@@ -3,18 +3,18 @@ import { faCircle } from "@fortawesome/free-regular-svg-icons"
 
 export const Academic = ({ lugar, fecha, titulo, area }) => {
   return (
-    <div className="academic">
-      <h3 className="academic__place-date">
+    <div className="grid grid-cols-[1fr_1rem_1fr] gap-2 leading-6">
+      <h3 className="pb-7 text-base text-end text-back font-bold">
         {lugar}
-        <p>{fecha}</p>
+        <p className="text-[0.8rem] text-third font-normal">{fecha}</p>
       </h3>
-      <div className="ornament">
-        <FontAwesomeIcon icon={faCircle} className="ornament__icon" />
-        <div className="ornament__line"></div>
+      <div className="flex flex-col items-center justify-center text-center text-sm text-primary">
+        <FontAwesomeIcon icon={faCircle} className="my-1 mx-auto relative" />
+        <div className="w-[.125rem] h-full my-0 mx-auto bg-third"></div>
       </div>
-      <div className="academic__info">
-        <h4>{titulo}</h4>
-        <p>{area}</p>
+      <div>
+        <h4 className="font-bold">{titulo}</h4>
+        <p className="text-sm">{area}</p>
       </div>
     </div>
   )

@@ -37,8 +37,8 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="form_grid">
-      <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+    <div className="py-7 px-2 grid grid-cols-[20rem_1fr]">
+      <form ref={form} onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8">
         {inputs.map((input, idx) => (
           <InputContainer
             key={idx}
@@ -62,7 +62,7 @@ const EmailForm = () => {
             errors={errors}
           />
         ))}
-        <button type="submit" className="form_button">
+        <button type="submit" className="py-1 px-2 my-0 mx-auto bg-primary text-white border-none rounded-md text-base hover:cursor-pointer active:scale-95">
           Enviar Email
         </button>
         <LoadSpin state={isSending ? "active" : "inactive"} />

@@ -14,32 +14,6 @@
     ]
   },
   {
-    "titulo": "Artamy",
-    "imagen": "/proyectos/Artamy.PNG",
-    "lenguajes": [
-      "react",
-      "bootstrap"
-    ],
-    "repositorio": "https://github.com/FabiSax12/Art-amy",
-    "host": "https://artamy.vercel.app/",
-    "filtros": [
-      "cliente"
-    ]
-  },
-  {
-    "titulo": "Portfolio",
-    "imagen": "/proyectos/portfolio.PNG",
-    "lenguajes": [
-      "react",
-      "sass"
-    ],
-    "repositorio": "https://github.com/FabiSax12/curriculum-moderno-en-react",
-    "host": "https://portfolio-fabisax.vercel.app",
-    "filtros": [
-      "personal"
-    ]
-  },
-  {
     "titulo": "Conecta 4",
     "imagen": "/proyectos/Conecta-4.PNG",
     "lenguajes": [

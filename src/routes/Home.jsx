@@ -1,4 +1,5 @@
-import Skills from "../components/Skills.jsx";
+import { Skills } from "../components/Skills.jsx"
+
 
 const Home = () => {
   return (

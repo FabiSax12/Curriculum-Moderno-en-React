@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { SiJquery } from "react-icons/si";
 
-const Skills = ({ animation }) => {
+export const Skills = ({ animation }) => {
   return (
     <div className={`skills__container ${animation ? "animation" : ""}`}>
       <Technology icon={faHtml5} />
@@ -26,5 +26,3 @@ const Skills = ({ animation }) => {
     </div>
   );
 };
-
-export default Skills;

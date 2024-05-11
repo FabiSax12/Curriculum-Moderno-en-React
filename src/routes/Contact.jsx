@@ -1,5 +1,5 @@
 import { useFirstActivation } from "../hooks/useFirstActivation";
-import EmailForm from "../components/EmailForm"
+import EmailForm from "../Components/EmailForm"
 
 const Contact = () => {
   const { pageContentRef } = useFirstActivation();

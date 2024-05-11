@@ -12,40 +12,40 @@
 
 /* ----- ----- Componentes ----- ----- */
 @import "../app";
-@import "./components/pages";
+@import "./Components/pages";
 
 /* Sidebar */
-@import "./components/sidebar";
-@import "./components/socialNetwork";
+@import "./Components/sidebar";
+@import "./Components/socialNetwork";
 
 /* Navegación */
-@import "./components/navigation";
-@import "./components/pageIcon";
+@import "./Components/navigation";
+@import "./Components/pageIcon";
 
 /* Home */
-@import "./components/home";
-@import "./components/skills";
-@import "./components/technology";
+@import "./Components/home";
+@import "./Components/skills";
+@import "./Components/technology";
 
 /* Sobre Mi */
-@import "./components/aboutMe";
+@import "./Components/aboutMe";
 
 /* Curriculum */
-@import "./components/resume";
-@import "./components/Job";
-@import "./components/academic";
+@import "./Components/resume";
+@import "./Components/Job";
+@import "./Components/academic";
 
 /* Proyectos */
-@import "./components/proyects";
-@import "./components/proyectCard";
+@import "./Components/proyects";
+@import "./Components/proyectCard";
 
 /* Contacto */
-@import "./components/contact";
-@import "./components/emailForm";
-@import "./components/inputContainer";
-@import "./components/inputMessage";
-@import "./components/loadSpin";
-@import "./components/emailPreview";
+@import "./Components/contact";
+@import "./Components/emailForm";
+@import "./Components/inputContainer";
+@import "./Components/inputMessage";
+@import "./Components/loadSpin";
+@import "./Components/emailPreview";
 
 /* ----- ----- Media Queries ----- ----- */
 @import "./MediaQ/Desktops";

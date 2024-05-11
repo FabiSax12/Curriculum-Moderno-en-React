@@ -1,6 +1,6 @@
-import Sidebar from "./Components/Sidebar";
-import Pages from "./Components/Pages";
-import Navigation from "./Components/Navigation";
+import Sidebar from "./components/Sidebar";
+import Pages from "./components/Pages";
+import Navigation from "./components/Navigation";
 import { HashRouter } from "react-router-dom";
 import { useState } from "react";
 

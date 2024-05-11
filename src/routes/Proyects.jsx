@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useFirstActivation } from "../hooks/useFirstActivation";
-import ProyectCard from "../components/ProyectCard.jsx";
+import ProyectCard from "../components/ProyectCard";
 import {
   faHtml5,
   faCss3Alt,

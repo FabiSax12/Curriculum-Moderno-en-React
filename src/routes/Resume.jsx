@@ -1,6 +1,6 @@
 import Job from "../components/Job";
 import { useFirstActivation } from "../hooks/useFirstActivation";
-import { Academic } from "../components/Academic.jsx";
+import { Academic } from "../components/Academic";
 
 const Resume = () => {
   const { pageContentRef } = useFirstActivation();

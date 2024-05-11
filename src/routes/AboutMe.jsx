@@ -1,5 +1,4 @@
 import { useFirstActivation } from "../hooks/useFirstActivation";
-import { ImgConvert } from "../components/ImgConvert"
 
 const AboutMe = () => {
   const { pageContentRef } = useFirstActivation();
